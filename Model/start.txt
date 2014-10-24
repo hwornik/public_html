@@ -1,0 +1,15 @@
+<p class="info">Hier entsteht meine Homepage</p>
+<p class="text"> und ähnliches</p>
+<p class="ueber">Sport</p>
+<p class="text"> Meine Sportaktivitäten und alles was ich über Langstreckenlauf weiss</p>
+<p class="ueber"> Wissen</p>
+<p class="text">Alles über Informatik, Psychologie und Metaphysik</p>
+<p class="ueber">Chronik</p>
+<p class="text"> Ich im Verlauf der Zeit</p>
+<p class="ueber">Games</p>
+<p class="text">Was ich spiele, spielte sowie overClocking Sachen</p>
+<p class="ueber">Personal</p>
+<p class="text">persönlicher Bereich</p>
+<p class="ueber">Tools</p>
+<p class="text">Alle Tools, Programme die ich verwende, oder gut finde</p>
+

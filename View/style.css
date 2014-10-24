@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+}
+
+  li.treeMenu_opened ul {
+    display: block;
+  }
+  li.treeMenu_closed ul {
+    display: none;
+  }
+img
+{
+content:icon;
+icon:url(logo.png);
+}
+
+h1 {
+text-align: center;
+text-height: auto;
+color: lime;
+background-color: #004080;
+background-position: inherit;
+position: fixed;
+top:    00%;
+left:  110px;
+height:40px;
+width: 80%;
+min-width: 700px;
+text-decoration: none;
+}
+ a h1:hover {
+    text-decoration: none;
+}
+
+
+
+#TextFeld {
+position:absolute;
+top:120px;
+left:300px;
+width: 50%;
+min-width: 400px;
+}
+
+.info {
+font-family:Verdana,Arial,Helvetica, "Trebuchet MS ",Tahoma,Geneva, "Lucida Sans Unicode ", "Lucida Grande ",sans-serif,bold;
+font-size: 40px;   
+}
+
+.ueber {
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.text {
+    font-size: 20px;
+    height: 150%;
+}
+
+
+/*Oberbuttions Anfang*/
+
+.buttonh {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttonh:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttonh:hover {
+    color:white;
+    border-color: black;
+}
+/*Oberbuttions Ende*/
+
+/*Unterbuttions Anfang*/
+
+.buttons {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+}
+.buttons:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons:hover {
+    color:white;
+    border-color: black;
+}
+/*Unterbuttions Ende*/
+
+
+#footer {
+text-align: right;
+text-justify: auto;
+position: fixed;
+height: 20px;
+bottom:00%;
+width: 80%;
+left:  110px;
+background-color: yellow;
+min-width: 700px;
+}
+
+
+.MeinBild {
+    position: fixed;
+    bottom: 20px;
+    left: 110px;
+    width: 120px;
+    
+}
+
+#menu {
+    position: fixed;
+    left: 0px;
+    top: 70px;
+    width: 180px;
+}
+
+.button0{
+ 
+    text-decoration: none;
+    background-color: gold;
+    color: black;
+}
+.button0:visited{
+
+    text-decoration: none;
+    color:  black;
+}
+.button0:hover{
+
+    text-decoration: none;
+    color: black;
+}
+
+/*Unterbuttons*/
+.button1{
+    cursor: context-menu;
+    background-color: #FFA110;
+        
+}
+
+
+.buttons11 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttons11:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons11:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons12 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttons12:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons12:hover {
+    color:white;
+    border-color: black;
+} 
+
+.buttons13 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttons13:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons13:hover {
+    color:white;
+    border-color: black;
+}
+
+
+
+.button2{
+    cursor: context-menu;
+    background-color: #9A3AF9;
+}
+
+
+.buttons21 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.buttons21:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  whitesmoke;
+}
+.buttons21:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons22 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.buttons22:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: whitesmoke;
+}
+.buttons22:hover {
+    color:white;
+    border-color: black;
+} 
+
+.buttons23 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.buttons23:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: whitesmoke;
+}
+.buttons23:hover {
+    color:white;
+    border-color: black;
+}
+
+
+/* Button 3*/  
+.button3{
+    cursor: context-menu;
+    background-color: #FBC8FA;
+}
+
+
+.buttons31 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+
+}
+.buttons31:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons31:hover {
+    color:white;
+    border-color: black;
+}
+ 
+/* Button 4*/  
+.button4{
+    cursor: context-menu;
+    background-color: #DC0767;
+}
+
+
+.buttons41 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.buttons41:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  whitesmoke;
+}
+.buttons41:hover {
+    color:white;
+    border-color: black;
+}     
+     
+/* Button 5*/ 
+.button5{
+    cursor: context-menu;
+    background-color: #F22C22;
+}
+
+
+.buttons51 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.buttons51:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  whitesmoke;
+}
+.buttons51:hover {
+    color:white;
+    border-color: black;
+}  
+ 
+ /* Button 6*/ 
+.button6{
+    cursor: context-menu;
+    background-color: #5C80EA;
+}
+
+
+.buttons61 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.buttons61:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: whitesmoke;
+}
+.buttons61:hover {
+    color:white;
+    border-color: black;
+} 
+ /* Button 7*/
+.button7{
+    cursor: context-menu;
+    background-color: #60F70F;
+}
+
+
+.buttons71 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+
+}
+.buttons71:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons71:hover {
+    color:white;
+    border-color: black;
+} 
+ 
+.buttons72 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttons72:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+
+.buttons72:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons73 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+
+.buttons73:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons73:hover {
+    color: white;
+    border-color: black;
+}
+
+.buttons74 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttons74:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons74:hover {
+    color:white;
+    border-color: black;
+}          
+
+.buttons75 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttons75:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons75:hover {
+    color:white;
+    border-color: black;
+} 
+/* Button blog */
+
+#Buttonblog {
+    position:  fixed;
+    top: 70px;
+    right:  30px;
+    width: 50px;
+    height: 160px;
+    font-family: cursive;
+    background-color: yellow;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: #E62222;
+}
+
+#Buttonblog:hover {
+    background-color: #00FF40;
+}
+ /* Buttons Ende */       
+ .pseudo {
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 110px;
+    z-index:0;
+    width:  80%;
+    min-width: 700px;
+    background-color: #FBF9A4;
+ }
+ 
+ .leftbar {
+    position: fixed;
+    top: 0px;
+    width: 110px;
+    left: 00px;
+    height: 40px;
+    background-color: #C93678;
+ }
+ 
+ .logo {
+    position: fixed;
+    left: 50px;
+    height: 40px;
+ }
+ 

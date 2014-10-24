@@ -1,0 +1,6 @@
+<p class="ueber">Nächster Wettkampf:  Marathon in Triest am 3.Mai 2015</p>
+<p class="ueber">Wunschzielzeit unter 4:00:00</p>
+<p class="ueber">(das wäre eine Durchschnittsgeschwindigkeit von mehr als 10 km/h)</p>
+<div id="endomondo">
+<iframe src="http://www.endomondo.com/embed/user/summary?id=199475&sport=0&measure=0&zone=Gp0100_AMS&width=680&height=217" width="680" height="217" frameborder="0" scrolling="no" ></iframe>
+<iframe src="http://www.endomondo.com/embed/user/workouts?id=199475&measure=0&width=680&height=400" width="680" height="400" frameborder="0" scrolling="no" ></iframe>

@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+}
+
+  li.treeMenu_opened ul {
+    display: block;
+  }
+  li.treeMenu_closed ul {
+    display: none;
+  }
+img
+{
+content:icon;
+icon:url(logo.png);
+}
+
+#middlebar {
+color: lime;
+background-color: #004080;
+background-position: inherit;
+position: absolute;
+top:    00%;
+z-index:1;
+left:  110px;
+height:80px;
+right: 20px;
+min-width: 700px;
+}
+h1 {
+text-align: center;
+text-height: auto;
+color: lime;
+background-position: inherit;
+position: absolute;
+top:    20px;
+z-index:2;
+left:  110px;
+height:40px;
+right: 220px;
+min-width: 700px;
+text-decoration: none;
+}
+ a h1:hover {
+    text-decoration: none;
+}
+
+#menuk:hover {
+    background-color: #070;
+}
+
+#mainMenu {
+position:absolute;
+top:80px;
+height: 30px;
+left: 0px;
+width:100%;
+      background-color: #070; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top,  #070,#00cf00,#00cf00, #070); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top,  #070,#00cf00,#00cf00, #070); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top,  #070,#00cf00,#00cf00, #070); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top,  #070,#00cf00,#00cf00, #070); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom,  #070,#00cf00,#00cf00, #070); /* Standard syntax; must be last */
+ 
+}
+
+#TextFeld {
+position:absolute;
+top:150px;
+left:20%;
+width: 70%;
+min-width: 400px;
+}
+
+.info {
+font-family:Verdana,Arial,Helvetica, "Trebuchet MS ",Tahoma,Geneva, "Lucida Sans Unicode ", "Lucida Grande ",sans-serif,bold;
+font-size: 40px;   
+}
+
+.ueber {
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.text {
+    font-size: 20px;
+    height: 150%;
+}
+
+#visitk {
+    width: 80%;
+}
+#menuakt {
+    position: absolute;
+    top:  83px;
+    left: 200px;
+}
+
+#menutext {
+    position: absolute;
+    top: 85px;
+    left: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: whitesmoke;
+}
+#Laufen {
+    position: inherit;
+    cursor: pointer;
+    width: 100px;
+}
+
+#Tools {
+    position: inherit;
+    cursor: pointer;
+    left: 100px;
+    width: 100px;
+
+}
+
+#Games {
+    position: inherit;
+    cursor: pointer;
+    left: 200px;
+    width: 100px;
+
+}
+
+#Chronik {
+    position: inherit;
+    cursor: pointer;
+    left: 300px;
+    width: 100px;
+
+}
+
+#Wissen {
+    position: inherit;
+    cursor: pointer;
+    left: 400px;
+    width: 100px;
+
+}
+
+#Foren {
+    position: inherit;
+    cursor: pointer;
+    left: 500px;
+    width: 100px;
+
+}
+
+#aktiviert {
+    display:none;
+    position: relative;
+    width: 100px;
+    height: 25px;
+    background-color: #070; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top,  #00cf00,#070, #00cf00); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top,  #00cf00,#070, #00cf00); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top,  #00cf00,#070, #00cf00); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top,  #00cf00,#070, #00cf00); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to bottom,  #00cf00,#070, #00cf00); /* Standard syntax; must be last */
+
+}
+#Laufmenu {
+    position: absolute;
+    top: 118px;
+    left: 20%;
+    text-height: font-size;
+    font-size: 15px;
+}
+
+.Laufbutton1 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    width: 140px;
+}
+
+.Toolbutton1 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    width: 140px;
+}
+
+.Gamebutton1 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    width: 140px;
+}
+
+.Chronikbutton1 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    width: 140px;
+}
+
+.Laufbutton2 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    left:140px;
+    width: 140px;
+}
+.Laufbutton3 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    left:280px;
+    width: 140px;
+}
+#rmaktuell{
+    position: absolute;
+    top: 114px;
+    left: 20%;
+    
+}
+.aktuell {
+    display:none;
+    position: relative;
+    border-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: grey;
+    background-color: white;
+    border-bottom-color: white;
+    width:140px;
+    left:0px;
+    height: 20px;
+}
+
+#Blogmenu {
+    display:none;
+    border-style: solid;
+    border-color: grey;
+    color: black;
+    text-align: center;
+    text-shadow: white;
+    position: fixed;
+    top:200px;
+    left: 30px;
+    height: 70px;
+    width: 150px;
+    background-color:#F4D061;
+}
+
+#submenuback {
+    display: none;
+    position: absolute;
+    top:110px;
+    height: 30px;
+    left: 0px;
+    width: 100%;
+}
+
+#menuLine {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    top: 137px;
+}
+
+
+#Personal1 {
+    background-color: #F22C22;
+}
+
+
+#menuk {
+    width: 15%;
+}
+#footer {
+
+position:fixed;
+bottom:0px;
+right: 0px;
+left:  0px;
+height: 30px;
+background-color: #ffffcc;
+  background-image: -webkit-linear-gradient(top,#FBF9A4, yellow,#FBF9A4); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top,#FBF9A4, yellow,#FBF9A4); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top,#FBF9A4, yellow,#FBF9A4); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top,#FBF9A4, yellow,#FBF9A4); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom,#FBF9A4, yellow,#FBF9A4); /* Standard syntax; must be last */
+}
+
+
+.MeinBild {
+    position: fixed;
+    bottom: 20px;
+    left: 110px;
+    width: 120px;
+    
+}
+
+#menu {
+    position: fixed;
+    left: 0px;
+    top: 70px;
+    width: 180px;
+}
+
+
+#Buttonblog {
+    position:  fixed;
+    top: 70px;
+    right:  30px;
+    width: 50px;
+    height: 160px;
+    font-family: cursive;
+    background-color: yellow;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: #E62222;
+}
+
+#Buttonblog:hover {
+    background-color: #00FF40;
+}
+ /* Buttons Ende */       
+ .pseudo {
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 110px;
+    right: 110px;
+    z-index:0;
+    min-width: 700px;
+    background-color: #FBF9A4;
+ }
+ 
+ .leftbar {
+    position: absolute;
+    top: 0px;
+    width: 110px;
+    left: 00px;
+    height: 80px;
+    background-color: #C93678;
+ }
+ 
+ .rightbar {
+    position: absolute;
+    top: 0px;
+    z-index:1;
+    right: 0px;
+    left: 80%;
+    height: 80px;
+    background-color: #004080;
+ }
+ 
+ .logo {
+    position: absolute;
+    top:20px;
+    left: 35px;
+    height: 40px;
+ }
+ 
+ #areainformatik {
+     cursor: pointer;
+     position: absolute;
+     top: 100px;
+     left:0px;
+     width: 250px;
+     height: 200px;
+     background-color: #9A3AF9;
+     border-style: solid;
+     border-color:  #0000ff;
+     
+ }
+ 
+ #informatik {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+ #areapsychologie  {
+     cursor: pointer;
+     position: absolute;
+     top: 100px;
+     left:300px;
+     width: 250px;
+     height: 200px;
+     background-color: #9A3AF9;
+     border-style: solid;
+     border-color:  #0000ff;
+     
+ }
+ 
+ #psychologie {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+  #areametaphysik  {
+     cursor: pointer;
+     position: absolute;
+     top: 100px;
+     left:600px;
+     width: 250px;
+     height: 200px;
+     background-color: #9A3AF9;
+     border-style: solid;
+     border-color:  #0000ff;
+     
+ }
+ 
+ #metaphysik {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+  #areainfo {
+     cursor: pointer;
+     position: absolute;
+     top: 50px;
+     left:0px;
+     width: 250px;
+     height: 200px;
+     background-color: #00cf00;
+     border-style: solid;
+     border-color:  #F4D061;
+     
+ }
+ 
+ #informatikfor {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+ #areapsycho  {
+     cursor: pointer;
+     position: absolute;
+     top: 50px;
+     left:300px;
+     width: 250px;
+     height: 200px;
+     background-color: #00cf00;
+     border-style: solid;
+     border-color: #F4D061;
+     
+ }
+ 
+ #psychologiefor {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+  #arealaufen  {
+     cursor: pointer;
+     position: absolute;
+     top: 50px;
+     left:600px;
+     width: 250px;
+     height: 200px;
+     background-color: #00cf00;
+     border-style: solid;
+     border-color:  #F4D061;
+     
+ }
+ 
+ #laufenfor {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+ #arealinux {
+     cursor: pointer;
+     position: absolute;
+     top: 350px;
+     left:0px;
+     width: 250px;
+     height: 200px;
+     background-color: #00cf00;
+     border-style: solid;
+     border-color:  #F4D061;
+     
+ }
+ 
+ #linuxfor {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+ #areawindows  {
+     cursor: pointer;
+     position: absolute;
+     top: 350px;
+     left:300px;
+     width: 250px;
+     height: 200px;
+     background-color: #00cf00;
+     border-style: solid;
+     border-color:  #F4D061;
+     
+ }
+ 
+ #windowsfor {
+     text-height: font-size;
+     font-size: 30px;
+     color: white;
+     position: relative;
+     top: 100px;
+     left: 5px;
+     
+ }
+ 
+ #impressium a{
+     color: black;
+     text-shadow: blue 3px 3px 5px;
+     cursor: pointer;
+     position: fixed;
+     bottom: 5px;
+     right:10px;
+     text-decoration: none;
+ }
+ #chess {
+     cursor: pointer; 
+     position: absolute;
+     top: 220px;
+     left: 20px;
+ }
+ 
+ #blog {
+    cursor: pointer; 
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    width:100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:  #00cf00;
+    background-color: yellow;
+    background-image: -webkit-linear-gradient(top ,whitesmoke, yellow,whitesmoke); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top,whitesmoke, yellow,whitesmoke); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top,whitesmoke, yellow,whitesmoke); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top,whitesmoke, yellow,whitesmoke); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to bottom,whitesmoke, yellow,whitesmoke); /* Standard syntax; must be last */
+ }
+ 
+  #bloghover {
+    display: none;
+    cursor: pointer; 
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    width:100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:  #00cf00;
+    background-color:#C93678;
+  }
+ 
+ .blogtext {
+     position: relative;
+     color: black;
+     top: 20px;
+     left: 10px;
+     width:80px;
+     height: 80px;
+ }
+ 
+ #Wechsel {
+    position: fixed;
+    cursor: pointer; 
+    bottom:50px;
+    right: 20px;
+    width:100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:  #00cf00;
+    background-color: yellow;
+    background-image: -webkit-linear-gradient(top ,whitesmoke, yellow,whitesmoke); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top,whitesmoke, yellow,whitesmoke); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top,whitesmoke, yellow,whitesmoke); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top,whitesmoke, yellow,whitesmoke); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to bottom,whitesmoke, yellow,whitesmoke); /* Standard syntax; must be last */
+  }
+  
+  #Wechselhover {
+    display: none;
+    cursor: pointer; 
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    width:100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:  #00cf00;
+    background-color:#C93678;
+  }
+  
+  .Pc {
+    display: none;
+    position: relative;
+    top: 40px;
+    left: 40px;
+  }
+  
+  .Phone {
+    display: none;
+    position: relative;
+    top: 40px;
+    left: 25px; 
+  }

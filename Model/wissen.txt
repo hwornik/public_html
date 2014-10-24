@@ -1,0 +1,10 @@
+<script  type="text/javascript" src="../Ajax/scripts/wissen.js" ></script>
+<div id="areainformatik">
+    <p id="informatik">Informatik</p>
+</div>
+<div id="areapsychologie">
+    <p id="psychologie">Psychologie</p>
+</div> 
+<div id="areametaphysik">
+    <p id="metaphysik">Metaphysik</p>
+</div>

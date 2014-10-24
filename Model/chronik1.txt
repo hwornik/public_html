@@ -1,0 +1,22 @@
+<p class="info">1983 erste Fortran Prozedur geschrieben</p>
+<br>
+<hr>
+<br>
+<p class="info">1983 Atari 600Xl gekauft</p>
+<p class="text">Nach fertigstellung eines Malprogrammes beim Kompilieren abgestürzt-> finale  Programmversion futsch!!</p>
+<br>
+<hr>
+<br>
+<p class="info">1986 IBM-PC von Arbeitskollegen gekauft</p>
+<p class="text"> Erste Overclock Aktion: Math-Co-Prozessor mit selbstgebastelten Kühlkörper eingebaut</p>
+<br>
+<hr>
+<br>
+<p class="info">1996 Erste Linux Version parallel mit Windows </p>
+<p class="text">Nach wieder einmal wochenlangen Versuchen mit den neuen Linux Distributionen klappt es endlich mit SuSE Linux den PC mit aller Hardware zum laufen zu bringen</p>
+<br>
+<hr>
+<br>
+<p class="info">1998 Webseite www.wornik.at erstellt </p>
+<p class="text">Haben uns aufgrund der Zusatzfunktionen für MS Frontpage entschieden</p>
+<p class="text">Neue Seite von 2010 wurde von jemand anderen erstellt</p>

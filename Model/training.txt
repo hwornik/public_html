@@ -1,0 +1,18 @@
+<p class="ueber">Trainingsprogramme die ich bereites getestet habe:</h2>
+<h2>XP-Sport</h2>
+<p class="text">Brachte mich von null (konnte nur 15min in einen durch laufen) bis zu 5km Strecken</p>
+<h2>go-Coach</h2>
+<p class="text">Brachte mich zu einer Super Grundlagenausdauer</p>
+<h2>2peak</h2>
+<p class="text">Brachte mich zu einem Verständnis wie ich meine Leistung steigern kann</p>
+<hr>
+<div>
+<p class="text">Trainiere nach eigenen Ermessen 10km Läufe im Renntempo, 
+Ruhephasen je nach körperlichen Zustand.<br>
+Zwischendurch bei Schlechtwetter Ausdauertraining am Ergometer.</p>
+<hr>
+<div>
+<p class="ueber">Momentanes Trainingsprogramm:</p>
+<p class="text">Teste gerade die Android App: Epic Runner<br> 
+Distanz: Half-Med<br>
+Zielzeit: 1:44:48</p>

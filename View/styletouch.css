@@ -1,0 +1,911 @@
+* {
+    margin: 0;
+}
+
+img
+{
+content:icon;
+icon:url(logo.png);
+}
+
+h1 {
+text-align: center;
+text-height: auto;
+color: lime;
+background-color: #004080;
+background-position: inherit;
+position: fixed;
+top:    00%;
+left:  110px;
+height:40px;
+width: 80%;
+min-width: 700px;
+}
+
+
+
+#TextFeld {
+position:absolute;
+top:120px;
+left:300px;
+width: 50%;
+min-width: 400px;
+}
+
+.info {
+font-family:Verdana,Arial,Helvetica, "Trebuchet MS ",Tahoma,Geneva, "Lucida Sans Unicode ", "Lucida Grande ",sans-serif,bold;
+font-size: 40px;   
+}
+
+.ueber {
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.text {
+    font-size: 20px;
+    height: 150%;
+}
+
+
+/*Oberbuttions Anfang*/
+
+.buttonh {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+}
+.buttonh:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttonh:hover {
+    color:white;
+    border-color: black;
+}
+/*Oberbuttions Ende*/
+
+/*Unterbuttions Anfang*/
+
+.buttons {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+}
+.buttons:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons:hover {
+    color:white;
+    border-color: black;
+}
+/*Unterbuttions Ende*/
+
+
+#footer {
+text-align: right;
+text-justify: auto;
+position: fixed;
+height: 20px;
+bottom:00%;
+width: 80%;
+left:  110px;
+background-color: yellow;
+min-width: 700px;
+}
+
+
+.MeinBild {
+    position: fixed;
+    bottom: 20px;
+    left: 110px;
+    width: 120px;
+    
+}
+/* Button 1*/
+#Button1
+{	
+    position: fixed;
+    margin: 0;
+}
+
+#Button1 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button1 li a
+{	display: block;
+    position: fixed;
+    left: 115px;
+    top: 70px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button1 li a:hover
+{	
+    background: #FF8000;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button1 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button1 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+
+
+
+/*Unterbuttons*/
+.shadow1 {
+    position: fixed;
+    left: 115px;
+    top: 70px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+        border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons11 {
+    width: 90px;
+    height: 30px;
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #FFA110;
+}
+.buttons11:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons11:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons12 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    background-color: #FFC31C;
+}
+.buttons12:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons12:hover {
+    color:white;
+    border-color: black;
+} 
+
+.buttons13 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    background-color: #FFD200;
+}
+.buttons13:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons13:hover {
+    color:white;
+    border-color: black;
+}
+
+
+/* Button 2*/       
+#Button2
+{	
+    position: fixed;
+    margin: 0;
+}
+
+#Button2 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button2 li a
+{	display: block;
+    position: fixed;
+    left: 120px;
+    top:102px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button2 li a:hover
+{	
+    background: #8000FF;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button2 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button2 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+/*Unterbuttons*/
+.shadow2 {
+    position: fixed;
+    left: 120px;
+    top:102px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+        border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons21 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #9A3AF9;
+}
+.buttons21:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons21:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons22 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    background-color: #B574F6;
+}
+.buttons22:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons22:hover {
+    color:white;
+    border-color: black;
+} 
+
+.buttons23 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    background-color: #C99DF5;
+}
+.buttons23:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color: black;
+}
+.buttons23:hover {
+    color:white;
+    border-color: black;
+}
+
+
+/* Button 3*/  
+#Button3
+{	
+    position: fixed;
+    margin: 0;
+}
+
+#Button3 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button3 li a
+{	display: block;
+    position: fixed;
+    left: 130px;
+    top:134px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button3 li a:hover
+{	
+    background: #F799F4;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button3 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button3 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+/*Unterbuttons*/
+.shadow3 {
+    position: fixed;
+    left: 130px;
+    top:134px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+        border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons31 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #FBC8FA;
+}
+.buttons31:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons31:hover {
+    color:white;
+    border-color: black;
+}
+ 
+/* Button 4*/  
+#Button4
+{	
+    position: fixed;
+    margin: 0;
+}
+
+#Button4 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button4 li a
+{	display: block;
+    position: fixed;
+    left:125px;
+    top: 166px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button4 li a:hover
+{	
+    background: #C93678;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button4 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button4 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+/*Unterbuttons*/
+.shadow4 {
+    position: fixed;
+    left:125px;
+    top: 166px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+        border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons41 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #DC0767;
+}
+.buttons41:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons41:hover {
+    color:white;
+    border-color: black;
+}     
+     
+/* Button 5*/  
+#Button5 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button5 li a
+{	display: block;
+    position: fixed;
+    left:120px;
+    top: 198px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button5 li a:hover
+{	
+    background: #E33228;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button5 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button5 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+/*Unterbuttons*/
+.shadow5 {
+    position: fixed;
+    left:120px;
+    top: 198px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+        border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons51 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #F22C22;
+}
+.buttons51:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons51:hover {
+    color:white;
+    border-color: black;
+}  
+ 
+ /* Button 6*/  
+#Button6 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button6 li a
+{	display: block;
+    position: fixed;
+    left:125px;
+    top: 230px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button6 li a:hover
+{	
+    background: #2A1CEE;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button6 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button6 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+/*Unterbuttons*/
+.shadow6 {
+    position: fixed;
+    left:125px;
+    top: 230px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+    border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons61 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #5C80EA;
+}
+.buttons61:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons61:hover {
+    color:white;
+    border-color: black;
+} 
+ /* Button 7*/
+#Button7 li
+{	margin: 0;
+	list-style: none;
+	float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#Button7 li a
+{	display: block;
+    position: fixed;
+    left: 120px;
+    top:262px;
+	width: 90px;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: #DDDDDD;
+	text-align: center;
+	text-decoration: none;
+ }
+
+#Button7 li a:hover
+{	
+    background: #A1F701;
+    height: 30px;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#Button7 div
+{	position: relative;
+    top: 0px;
+    left: 95px;
+	visibility: hidden;
+	margin: 0;
+}
+
+	#Button7 div a
+	{	position: relative;
+		display: inline-block;
+		margin: 0;
+ 		width: 90px;
+		text-align: center;
+            border:solid;
+    border-width: thin;
+    border-color: black;
+	}
+
+/*Unterbuttons*/
+.shadow7 {
+    position: fixed;
+    left: 120px;
+    top:262px;
+	width: 90px;
+    height: 30px;
+    background-color: silver;
+    border:solid;
+    border-width: thin;
+    border-color: silver;
+}
+
+
+.buttons71 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #60F70F;
+}
+.buttons71:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons71:hover {
+    color:white;
+    border-color: black;
+} 
+ 
+.buttons72 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #51D60A;
+}
+.buttons72:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons72:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons73 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #45B309;
+}
+.buttons73:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons73:hover {
+    color:white;
+    border-color: black;
+}
+
+.buttons74 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #3A9A07;
+}
+.buttons74:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons74:hover {
+    color:white;
+    border-color: black;
+}          
+
+.buttons75 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: black;
+    text-decoration: none;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    background-color: #328008;
+}
+.buttons75:visited {
+   font-family: "Times New Roman", Georgia, serif; 
+   color:  black;
+}
+.buttons75:hover {
+    color:white;
+    border-color: black;
+} 
+/* Button blog */
+
+#Buttonblog {
+    position:  fixed;
+    top: 70px;
+    left:  30px;
+    width: 50px;
+    height: 160px;
+    font-family: cursive;
+    background-color: yellow;
+    border:solid;
+    border-width: thin;
+    border-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: #E62222;
+}
+
+#Buttonblog:hover {
+    background-color: #00FF40;
+}
+ /* Buttons Ende */       
+ .pseudo {
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 110px;
+    width:  80%;
+    min-width: 700px;
+    background-color: #FBF9A4;
+ }
+ 
+ .leftbar {
+    position: fixed;
+    top: 0px;
+    width: 110px;
+    left: 00px;
+    height: 40px;
+    background-color: #C93678;
+ }
+ 
+ .logo {
+    position: fixed;
+    left: 50px;
+    height: 40px;
+ }
+ 

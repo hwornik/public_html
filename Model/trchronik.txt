@@ -1,0 +1,11 @@
+<p class="ueber">Trainingschronik</h2>
+<h2>Trainingsstart Juni 2009</h2>
+<p class="text">als erstes Ziel war der Halbmarathon mit Inline_Skates am 5.09 in Salzburg</p>
+<h2>Erster Lauf: Halbmarathon in Wien am 18-04-2010</h2>
+<p class="text">Zeit: 2:25:07 Pace:6,52 min/km Speed: 8,52 km/h </p>
+<h2>Zweiter Lauf: Halbmarathon in Kärnten am 22-08-2010</h2>
+<p class="text">Zeit: 2:28:37 Pace: 7:02 min/km Speed: 8,52 km/h</p>
+<h2>Dritter Lauf: Halbmarathon in Salzburg am 5-05-2013</h2>
+<p class="text">Zeit: 1:59:13 Pace: 5:39 min/km Speed: 10,62 km/h</p>
+<h2>Vierter Lauf: Halbmarathon in Kärnten am 24-08-2014</h2>
+<p class="text">Zeit: 2:00:01 Pace: 5:41 min/km Speed: 10,45 km/h</p>   

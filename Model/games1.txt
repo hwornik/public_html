@@ -1,0 +1,15 @@
+<p class="info">NFS Shift</p>
+<p class="ueber">Gutes Nvidia 3D und Physik </p>
+<p class="text">letztes von der NFS Serie das spielbar ist</p>
+<br>
+<hr>
+<br>
+<p class="info">Dirt 3</p>
+<p class="ueber">Gutes Nvidia 3D und Physik </p>
+<p class="text">Gutes Gameplay</p>
+<br>
+<p class="info">Meine neuen Spielkameraden:</p>
+<p class="ueber">Laptop [Linux-Mageia3]</p>
+<p> Shredder Classic 4 als Gui und als Engines: Stockfish DD und Komodo 6 64bit</p>
+<p class="ueber">Workstation [Linux-Mageia3]</p>
+<p> Shredder Classic 4 im Test und Scid als GUI und als Engines: Stockfish DD und Komodo TCEC</p><br><br>
