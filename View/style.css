@@ -406,6 +406,12 @@ min-width: 700px;
     color:white;
     border-color: black;
 } 
+
+ /* Button 8*/
+.button8{
+    cursor: context-menu;
+    background-color: #60F70F;
+}
 /* Button blog */
 
 #Buttonblog {
@@ -453,4 +459,3 @@ min-width: 700px;
     left: 50px;
     height: 40px;
  }
- 

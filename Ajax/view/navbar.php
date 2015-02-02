@@ -11,7 +11,7 @@ class Navbar {
                <p id="Games">Games</p>
                <p id="Chronik">Chronik</p>
                <p id="Wissen">Wissen</p>
-              
+               <p id="Schach">Schach</p>
             </div>
             <p id="submenuback"></p>
             <p id="menuLine"></p>

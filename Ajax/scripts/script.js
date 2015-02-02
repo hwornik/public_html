@@ -93,7 +93,7 @@ $(document).ready(function(){
       $("#aktiviert").hide();
     });
     
-     $("#Foren").click(function(){
+     $("#Schach").click(function(){
         allhide();
         $("#TextFeld").load('/Model/wissen.txt');
     });

@@ -141,12 +141,19 @@ font-size: 40px;
 
 }
 
-#Foren {
+#Schach {
     position: inherit;
     cursor: pointer;
     left: 500px;
     width: 100px;
 
+}
+
+#Schach:hover {
+    background-color: #00FF40;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:  #00cf00;
 }
 
 #aktiviert {

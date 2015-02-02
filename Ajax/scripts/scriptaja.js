@@ -150,7 +150,7 @@
         tab4 = new ContentPane({title: "Games",content: '<p id="ganes">hallo</p>'}),
         tab5 = new ContentPane({title: "Personal",content: '<p id="personal">hallo</p>'}),
         tab6 = new ContentPane({title: "Tools",content: '<p id="tools">hallo</p>'}),
-        tab7 = new ContentPane({title: "Foren",content: '<p id="foren">hallo</p>'});
+        tab7 = new ContentPane({title: "Schach",content: '<p id="schach">hallo</p>'});
         tc.addChild( tab1 );
         tc.addChild( tab2 );
         tc.addChild( tab3 );
