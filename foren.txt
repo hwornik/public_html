@@ -1,0 +1,16 @@
+<script  type="text/javascript" src="../Ajax/scripts/foren.js" ></script>
+<div id="areainfo">
+    <p id="informatikfor">Informatik</p>
+</div>
+<div id="areapsycho">
+    <p id="psychologiefor">Psychologie</p>
+</div> 
+<div id="arealaufen">
+    <p id="Laufenfor">Laufen</p>
+</div>
+<div id="areawindows">
+    <p id="windowsfor">Windows</p>
+</div>
+<div id="arealinux">
+    <p id="Linuxfor">Linux</p>
+</div>
