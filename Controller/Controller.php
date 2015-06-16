@@ -48,6 +48,9 @@ class Controller {
         if($action=='tool1')
         {
             $seite = implode(" ",file($_SESSION['pfad']."/Model/tools1.txt"));
+        }if($action=='schach')
+        {
+            $seite = implode(" ",file($_SESSION['pfad']."/Model/wissen.txt"));
         }
         $seite=preg_replace("/[ ]+/" , " " ,$seite);
         return preg_replace("/[^a-zA-Z0-9äöüÄÖÜ_ß <>\/=\":\.?&()\-,]/" , "" ,$seite);

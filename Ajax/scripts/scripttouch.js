@@ -86,21 +86,21 @@ $(document).ready(function(){
       $("#aktiviert").hide();
     });
     
-    $("#Foren").hover(function(){
+    $("#Schach").hover(function(){
       $("#aktiviert").css({"left":'750px'}); 
       $("#aktiviert").show();
       },function(){
       $("#aktiviert").hide();
     });
     
-     $("#Foren").click(function(){
+     $("#Schach").click(function(){
         allhide();
         $("#TextFeld").load('/Model/foren.txt');
     });
     
      $("#Wissen").click(function(){
         allhide();
-        $("#TextFeld").load('/Model/wissen.txt');
+        $("#TextFeld").load('/Model/foren.txt');
     });
     
     $("#Chronik").click(function(){
@@ -157,6 +157,11 @@ $(document).ready(function(){
         $("#submenuback").css({"background-color":"#F4D061"});
         $("#submenuback").show();
 
+    });
+
+$("#Schach").click(function(){
+        allhide();
+        $("#TextFeld").load('/Model/wissen.txt');
     });
         
     $(".Laufbutton1").click(function(){

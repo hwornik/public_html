@@ -11,21 +11,19 @@ print("<a href='/'> <h1>Willkommen ".$_SESSION['system']."</h1></a>");
         <li><a href="?action=trchronik" class="buttons13">Laufchronik</a></li>
     </ul>
   </li>
-  <li class="button2">Wissen 
+  <li class="button2">Schach 
        <ul>
-        <li><a href="http://wikiinfo.wornik.eu" class="buttons21" >Informatik</a></li>
-        <li><a href="http://wikipsy.wornik.eu" class="buttons22" >Psychologie</a></li>
-        <li><a href="http://wikimph.wornik.eu" class="buttons23" >MetaPhysik</a></li>
+        <li><a href="?action=schach" class="buttons21" >Aktuelles</a></li>
       </ul>
     </li>
     <li class="button3">Chronik
       <ul>
-        <li><a href="/" class="buttons31">Aktuelles</a></li>
+        <li><a href="?action=chronik1" class="buttons31">Aktuelles</a></li>
       </ul>
     </li>
     <li  class="button4">Games
         <ul>
-        <li><a href="/" class="buttons41">Aktuelles</a></li>
+        <li><a href="?action=games1" class="buttons41">Aktuelles</a></li>
         </ul>
     </li>
     <li class="button5">Personal 
@@ -35,10 +33,10 @@ print("<a href='/'> <h1>Willkommen ".$_SESSION['system']."</h1></a>");
     </li>
     <li class="button6">Tools
         <ul>
-        <li><a href="/?action=tool1" class="buttons61">Aktuelles</a> </li>
+        <li><a href="?action=tool1" class="buttons61">Aktuelles</a> </li>
         </ul>
     </li>
-    <li class="button7">Foren
+    <li class="button7">Wissen
         <ul>
         <li><a href="http://laufen.wornik.eu" class="buttons71">Laufen</a></li>
         <li><a href="http://windows.wornik.eu" class="buttons72">Windows</a></li>
