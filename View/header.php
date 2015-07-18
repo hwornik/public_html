@@ -2,6 +2,7 @@
 <head>
 
     <meta charset="UTF-8" >
+    <meta http-equiv="Pragma" content="no-cache">
 	<meta name="author" content="Hans Wornik">
     <script  type="text/javascript" src="/Scripts/script.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php

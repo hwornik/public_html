@@ -7,12 +7,9 @@ class Navbar {
             </div> 
             <div id="menutext">
                <p id="Laufen">Laufen</p>
-               <p id="Tools">Tools</p>
-               <p id="Games">Games</p>
-               <p id="Chronik">Chronik</p>
-               <p id="Wissen">Wissen</p>
-               <p id="Schach">Schach</p>
-            </div>
+               <p id="Tools">Boxen</p>
+               <p id="Games">Schach</p>
+             </div>
             <p id="submenuback"></p>
             <p id="menuLine"></p>
             <div id="rmaktuell">

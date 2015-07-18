@@ -9,7 +9,7 @@
     <p id="Laufenfor">Laufen</p>
 </div>
 <div id="areawindows">
-    <p id="windowsfor">Windows</p>
+    <p id="windowsfor">Boxen</p>
 </div>
 <div id="arealinux">
     <p id="Linuxfor">Linux</p>

@@ -7,8 +7,20 @@
 <br>
 <hr>
 <br>
+<p class="info">1984 HTL-Elektrotechnik Matura </p>
+<br>
+<hr>
+<br>
+<p class="info">1985-1989 Angestellter bei Siemens Bauelemente OHG in Villach </p>
+<br>
+<hr>
+<br>
 <p class="info">1986 IBM-PC von Arbeitskollegen gekauft</p>
 <p class="text"> Erste Overclock Aktion: Math-Co-Prozessor mit selbstgebastelten Kühlkörper eingebaut</p>
+<br>
+<hr>
+<br>
+<p class="info">1988 Ingenieurtitel </p>
 <br>
 <hr>
 <br>

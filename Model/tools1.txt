@@ -1,19 +1,2 @@
-<p class="info">Getestete Betriebssysteme:</p>
-<p class="ueber">Windows 3.11 - 95 - 98 - 2000 - XP 32bit/64bit - Vista 32Bit/64Bit - 7 64Bit</p>
-<p class="ueber"> SUSE Linux since 1996 - Slackware - Debian - Solaris - Ubuntu - Kubuntu - Mandriva - Fedora</p>
-<br>
-<hr>
-<br>
-<p class="info">Windows [Windows 7]:</p>
-<p class="ueber">Installation:</p>
-<p class="text">Netzweradapter installieren</p>
-<p class="text">DriverEasy installieren</p>
-<p class="text">Restlichen Treiber mit Easy Driver installieren</p>
-<br>
-<hr>
-<br>
-<p class="info">Linux:</p>
-<p class="ueber">SuSe 12.2 [Laptop]</p>
-<p class="ueber">5.01.2013 Fedora 18 [Laptop]</p>
-<p class="ueber">Mandriva 2011 [Workstation]</p>
-<p class="ueber">5.01.2013 Fedora 18 [Workstation]</p>
+<p class="info">Trainingsstart 30.06.2015</p>
+<p class="ueber">bei Boxverein E&S Klagenfurt</p>

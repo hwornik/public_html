@@ -5,6 +5,7 @@ class Header {
         print(' <html>
     <head>
         <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache">
 	<meta name="author" content="Hans Wornik">
         <link rel="stylesheet" type="text/css"  href="scripts/themes/base/jquery-ui.css">
         <script  type="text/javascript" src="scripts/jquery-1.9.1.js" ></script>
