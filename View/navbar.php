@@ -16,11 +16,12 @@ print("<a href='/'> <h1>Willkommen ".$_SESSION['system']."</h1></a>");
         <li><a href="?action=schach" class="buttons21" >Aktuelles</a></li>
       </ul>
     </li>
-    <li class="button3">Chronik
+    <li class="button3">Boxen
       <ul>
-        <li><a href="?action=chronik1" class="buttons31">Aktuelles</a></li>
+        <li><a href="?action=tool1" class="buttons31">Aktuelles</a></li>
       </ul>
     </li>
+    <!--
     <li  class="button4">Games
         <ul>
         <li><a href="?action=games1" class="buttons41">Aktuelles</a></li>
@@ -44,5 +45,5 @@ print("<a href='/'> <h1>Willkommen ".$_SESSION['system']."</h1></a>");
         <li><a  href="http://infostud.wornik.eu" class="buttons74">Informatik</a></li>
         <li><a  href="http://psystud.wornik.eu" class="buttons75">Psychologie</a></li>
         </ul>
-    </li>
+    </li> -->
 </ul>
