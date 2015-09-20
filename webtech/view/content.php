@@ -23,7 +23,7 @@ class Content {
         $daten=$daten. ' es ist ohne Kenntnis von Login und Passwort nicht möglich sich bei ihren Konto Anzumelden. <br>';
         $daten=$daten.'<br>';
         echo $daten;
-          
+         
     }
     
     public function fehler($daten) {

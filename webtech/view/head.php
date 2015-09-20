@@ -8,6 +8,9 @@ class Head {
                         print('./scripts/sha256.js" ></script><script  type="text/javascript" src="');
                         print('./scripts/Aes.js" ></script>');
                         print('<title>dates&friends</title>');
+                        print('<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
+                            data-dojo-config="async: true"></script>');
+
         }
         
         public function makerefresh(){
@@ -18,13 +21,13 @@ class Head {
             print('</head>
              <body onload="'.$jscriptfunc.'"> 
              <header><banner></banner>');
+
         }
 
-
+        
         
         public function title() {
-        print('<h1> Dates & Friends</h1>');
-                    
+        print('<h1 id="titel">Dates & Friends</h1>');     
     }
     
     public function login() {

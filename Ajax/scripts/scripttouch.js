@@ -132,7 +132,7 @@ $(document).ready(function(){
     $("#Games").click(function(){
         allhide();
         $("#menuLine").show();
-        $("#TextFeld").load('/Model/games1.txt');
+        $("#TextFeld").load('/Model/wissen.txt');
         $(".Gamebutton1").css({"cursor":"pointer"});
         $(".Gamebutton1").show();
         $(".aktuell").css({"left":'0px'});
