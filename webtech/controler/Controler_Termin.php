@@ -28,6 +28,14 @@ class Controler_Termin extends Controler {
         $this->showContent();
         $this->showrigthbar();
         $this->showfooter();
+                print("<script> require([ 
+                'dojo/dom',
+                'dojo/dom-construct',
+                'dojo/fx',
+                'dojo/domReady!'
+        ], function (dom, domConstruct,fx) {
+            var greetingNode = dom.byId('titel');
+            domConstruct.place('<em> Termine</em>', greetingNode);});</script>");
     }
             
     /**

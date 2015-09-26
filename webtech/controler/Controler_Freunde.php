@@ -29,6 +29,14 @@ class Controler_Freunde extends Controler {
         $this->showContent();
         $this->showrigthbar();
         $this->showfooter();
+                print("<script> require([ 
+                'dojo/dom',
+                'dojo/dom-construct',
+                'dojo/fx',
+                'dojo/domReady!'
+        ], function (dom, domConstruct,fx) {
+            var greetingNode = dom.byId('titel');
+            domConstruct.place('<em> Freunde</em>', greetingNode);});</script>");
     }
        
     /**

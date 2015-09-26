@@ -7,6 +7,8 @@ require_once $_SESSION['pfad'].'/controler/Controler_Nachrichten.php';
 require_once $_SESSION['pfad'].'/controler/Controler_Einstellungen.php';
 require_once $_SESSION['pfad'].'/controler/Controler_Termin.php';
 require_once $_SESSION['pfad'].'/model/Start.php';
+require_once $_SESSION['pfad'].'/model/Clients.php';
+
 /**
  * @copyright (c) 2013, Wornik Hans <hans@wornik.eu>
  *
@@ -15,6 +17,7 @@ require_once $_SESSION['pfad'].'/model/Start.php';
  * 
  * Dieser Controler steuert die anderen Controler
  */
+
 class Controler_Start extends Controler {
     
     /**
@@ -23,13 +26,14 @@ class Controler_Start extends Controler {
     public function __construct() {
         parent::__construct();
         $this->model= new Start();
+      
     }
     
     /**
      * Prüfen ob javascript aktiviert ist
      */
     public function checkJavaScript() {
-        
+
         $weiter='';
         if(isset($_GET['active']))
         {
@@ -46,14 +50,18 @@ class Controler_Start extends Controler {
                         </script>';
             $_SESSION['javascript']=false;
         }
-    }
+        $test = new Clients();
+        $_SESSION['platform'] = $test->getBrowser();
+ 
+     }
     
     /**
      * Steuert die Auswahl der anderen Controler
      */
     public function start() {
-        $this->checkJavaScript();
-        // Jabascript aktiviert
+
+         $this->checkJavaScript();
+        // Javascript aktiviert
         if(!$_SESSION['javascript'])
         {
                 if(isset($_SESSION['userid']) && $_SESSION['userid']<1)

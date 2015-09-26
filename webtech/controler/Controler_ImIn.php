@@ -30,6 +30,14 @@ class Controler_ImIn extends Controler {
         $this->showContent();
         $this->showrigthbar();
         $this->showfooter();
+        print("<script> require([ 
+                'dojo/dom',
+                'dojo/dom-construct',
+                'dojo/fx',
+                'dojo/domReady!'
+        ], function (dom, domConstruct,fx) {
+            var greetingNode = dom.byId('titel');
+            domConstruct.place('<em> Willkommen</em>', greetingNode);});</script>");
     }
             
     /**
@@ -38,7 +46,7 @@ class Controler_ImIn extends Controler {
     public function showContent() {
 
         $this->content->anfang();
-         $this->content->normal();
+        $this->content->normal();
         $this->content->ende();
     }
 

@@ -16,12 +16,25 @@ function supports_html5_storage() {
 function checkStorage() {
     if(supports_html5_storage())
     {
-        self.location.href="/webtech/index.php?storage=yes"
+        self.location.href="/webtech/index.php?storage=yes";
     }
     else
     {
-        self.location.href="/webtech/index.php?storage=no"
+        self.location.href="/webtech/index.php?storage=no";
     }
+}
+
+function startRegistration() {
+    window.location.href="?Register";
+}
+
+function restartRegistration() {
+    window.location.href="?Vergessen";
+}
+
+function changeLanguage(werte) {
+        window.location.href="?lang="+werte.toString();
+
 }
 
 function hashit(data) {

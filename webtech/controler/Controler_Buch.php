@@ -4,6 +4,7 @@ require_once $_SESSION['pfad'].'/model/Person.php';
 
 require_once $_SESSION['pfad'].'/securimage/securimage.php';
 require_once $_SESSION['pfad'].'/controler/Aes.php';
+require_once $_SESSION['pfad'].'/view/language/'.$_SESSION['language'].'/Buch.php';
 /**
  * @copyright (c) 2013, Wornik Hans <hans@wornik.eu>
  *
@@ -21,6 +22,7 @@ class Controler_Buch extends Controler {
     private $werte;
     private $wertefehler;
     private $logcookie;
+    private $sprache;
 
 
     /**
@@ -28,10 +30,12 @@ class Controler_Buch extends Controler {
      */
     public function __construct() {
         parent::__construct();
+        $language= new Buch();
+        $this->sprache=$language->loadSprache();
         $this->userid = -1;
         $this->model= new Person();
         $this->secimage = new Securimage();
-
+    
 
     }
  
@@ -55,7 +59,16 @@ class Controler_Buch extends Controler {
         $this->showContent();
         $this->showrigthbar();
         $this->showfooter();
-    }
+        print("<script> require([ 
+                'dojo/dom',
+                'dojo/dom-construct',
+                'dojo/fx',
+                'dojo/domReady!'
+        ], function (dom, domConstruct,fx) {
+            var greetingNode = dom.byId('titel');
+            domConstruct.place('<em>".$this->sprache[0]."<em>', greetingNode);});</script>");
+
+       }
     /**
      * Führt alle Operationen durch die den Bereich Content verändern
      */
@@ -65,7 +78,7 @@ class Controler_Buch extends Controler {
         // ist Javascript enabled
         if(!$_SESSION['javascript'])
         {
-            $this->content->fehler('Javascript ausgeschaltet keine Verschlüsselung/sicherer Datenverkehr möglich');
+            $this->content->fehler($this->sprache[1]);
             $this->content->normal();
         }
         // Aktivierungscode übertragen
@@ -77,7 +90,7 @@ class Controler_Buch extends Controler {
         // Registrierung erfolgreich abgeschlossen
         else if(isset($_GET['userok']))
         {
-            $this->content->fehler('Sie haben sich erfolgreich registriert');
+            $this->content->fehler($this->sprache[2]);
         }
         // Registrierung ausgewählt
         else if(isset($_GET['Register']))
@@ -135,7 +148,7 @@ class Controler_Buch extends Controler {
         // Fehler aufgetreten
         else if(isset($_GET['fehler']))
         {
-            $this->content->fehler('Falsches Passwort oder Username');
+            $this->content->fehler($this->sprache[3]);
         }
         // Aktivierungscode und Passwort wurde übertragen
         else if(isset($_GET['actconfirm']))
@@ -145,16 +158,16 @@ class Controler_Buch extends Controler {
                 {
                     if($this->model->activateUser($_SESSION['key'],$this->decryptit($_POST['passwt'])))
                     {
-                        $this->content->fehler('Account Erfolgreich aktiviert');
+                        $this->content->fehler($this->sprache[4]);
                     }
                     else 
                     { 
-                        $this->content->fehler('Fehler bei der Aktivierung');
+                        $this->content->fehler($this->sprache[5]);
                     }
                 }
                 else 
                 {
-                    $this->content->fehler('Falscher Code, Aktivierung fehlgeschlagen');
+                    $this->content->fehler($this->sprache[6]);
                 }
         }
         // Einlogung gestartet über Cookie oder login
@@ -196,6 +209,15 @@ class Controler_Buch extends Controler {
                     print "</script>";
                 }
         }
+        else if(isset($_GET['lang']))
+        {
+            $_SESSION['language']=$_GET['lang'];
+            echo '<h1>'.$_GET['lang'].'</h1>';
+            print "<script language=\"javascript\">";
+            print "window.location = \"?\"; ";
+            print "</script>";
+            
+        }
         // sonstiger Aufruf
         else
         {
@@ -210,6 +232,7 @@ class Controler_Buch extends Controler {
     public function showfooter() {
         $this->footer->anfang();
         $this->footer->ende();
+        $this->toolTips();
     }
 
     /**
@@ -219,20 +242,23 @@ class Controler_Buch extends Controler {
 
             $this->head->show();
             // decrypt
+            $jscriptfunc="";
             if(isset($_GET['Register']))
             {
                 $jscriptfunc="person.getKeyafillformReg()";
+   
             }
             // verarbeite Challenge
             if(isset($_GET['Challenge']))
             {
                 $jscriptfunc="person.compChallenge()";
- 
+        
             }
             // verarbeite Challenge über Cookie
             else if(isset($_COOKIE['terminbuch']) && $_SESSION['javascript'])
             {
                 $jscriptfunc="person.compChallengeCookie()";
+
             }
             $this->head->anfang($jscriptfunc);
             $this->head->title();
@@ -261,12 +287,22 @@ class Controler_Buch extends Controler {
         $this->rightbar->anfang();
         $this->rightbar->normal();
         $this->rightbar->ende();
-    }
+     }
     
     /**
      * User Registrierungssteuerung
      */
     private function registerUser() {
+                $this->werte["angzname"]="";
+                $this->werte["vname"]="";
+                $this->werte["nname"]="";
+                $this->werte["logon"]="";
+                $this->werte["email"]="";
+                $this->werte["email2"]="";
+                $this->werte["ort"]="";
+                $this->werte["str"]="";
+                $this->werte["land"] ="";
+                $this->werte["identifier"]="";
             $captchares='';
             // Chaptca übertragen = 2.Aufruf
             if(isset($_POST['captcha_code']))
@@ -449,5 +485,59 @@ class Controler_Buch extends Controler {
 
             }
      }
-            
+     
+     public function toolTips() {
+        print('<script>require(["dijit/Tooltip", "dojo/domReady!"], function(Tooltip){
+                new Tooltip({
+                    connectId: ["Homelink"],
+                    label: "'.$this->sprache[7].'"
+                });
+                new Tooltip({
+                    connectId: ["Neuigklink"],
+                    label: "'.$this->sprache[8].'"
+                });
+                new Tooltip({
+                    connectId: ["Freundelink"],
+                    label: "'.$this->sprache[9].'"
+                });
+                new Tooltip({
+                    connectId: ["Nachrichtlink"],
+                    label: "'.$this->sprache[10].'"
+                });
+                new Tooltip({
+                    connectId: ["checkit"],
+                    label: "'.$this->sprache[12].'"
+                });
+                 new Tooltip({
+                    connectId: ["neuterminlink"],
+                    label: "'.$this->sprache[13].'"
+                });
+                new Tooltip({
+                    connectId: ["terminbestlink"],
+                    label: "'.$this->sprache[14].'"
+                });
+                new Tooltip({
+                    connectId: ["terminheutelink"],
+                    label: "'.$this->sprache[15].'"
+                });
+                new Tooltip({
+                    connectId: ["terminmorgenlink"],
+                    label: "'.$this->sprache[16].'"
+                });
+                new Tooltip({
+                    connectId: ["terminwochelink"],
+                    label: "'.$this->sprache[17].'"
+                });
+                new Tooltip({
+                    connectId: ["terminmonatlink"],
+                    label: "'.$this->sprache[18].'"
+                });
+                new Tooltip({
+                    connectId: ["terminallelink"],
+                    label: "'.$this->sprache[19].'"
+                });
+            });</script>');
+     }
+       
+   
  }

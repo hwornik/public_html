@@ -1,11 +1,15 @@
 <?php
 	
+require_once $_SESSION['pfad'].'/view/language/'.$_SESSION['language'].'/Contentlang.php';
 class Content {
     
-
+    private $sprache;
 
     public function anfang() {
+        $lang= new Contentlang();
+        $this->sprache=$lang->loadSprache();
         print('<content>');
+        
     }
     
         public function ende() {
@@ -13,16 +17,8 @@ class Content {
     }
 
     public function normal() {
-        
-        $daten='Willkomen bei Dates Friends Terminplatform<br><br>';
-        $daten=$daten.'Die Inhalte dieser Webseite werden mit AES Verschlüsselt!<br><br>';
-        $daten=$daten.'Der Schlüssel ist Ihr passwort, das aus Sicherheitsgründen nur einmal, nämlich bei der Registrierung';
-        $daten=$daten.'übertragen wird. Dies geschieht aber auch verschlüsselt über den zugesandten Registrierungscode. ';
-        $daten=$daten. 'Die Daten der Registrierung selbst werden über dem Browser übermittelten Shlüsel verschlüsselt und es kann ';
-        $daten=$daten. ' selbst bei einer Attacke kein Bezug der Daten zu Ihren Konto hergestellt werden, und';
-        $daten=$daten. ' es ist ohne Kenntnis von Login und Passwort nicht möglich sich bei ihren Konto Anzumelden. <br>';
-        $daten=$daten.'<br>';
-        echo $daten;
+
+        echo $this->sprache[0];
          
     }
     
@@ -35,55 +31,47 @@ class Content {
     
     public function register($schl,$key,$werte,$captchares,$fehlerwerte) {
   
-        $daten='<jvcodes><input id="keycode" type="hidden" id="key" value="'.$key.'"></jvcodes>'
-        .'<registerform><input type="hidden" name="identifier" value="'.$schl.'">'
-        .'Angezeigter Name: <input type="hidden"name="angzname" value="'.$werte["angzname"].'"><fehler>'.$fehlerwerte['angzname'].'</fehler><br><br>
-        Vorname: <input type="hidden" name="vname" value="'.$werte["vname"].'"><fehler>'.$fehlerwerte['vname'].'</fehler><br><br>
-        Nachname: <input type="hidden"  name="nname" value="'.$werte["nname"].'"><fehler>'.$fehlerwerte['nname'].'</fehler><br><br>
-        Login Name: <input type="hidden" name="logon" value=""><fehler>'.$fehlerwerte['logon'].'</fehler><br><br>
-        E-Mail-Adresse:<input type="hidden" name="email" value="'.$werte["email"].'"><fehler>'.$fehlerwerte['email'].'</fehler><br><br>
-        E-Mail-Adresse bestätigen:<input type="hidden"name="email2" autocomplete="off" value="'.$werte["email2"].'"><fehler>'.$fehlerwerte['email2'].'</fehler><br><br>
-        Strasse: <input type="hidden" name="str" value="'.$werte["str"].'"><fehler>'.$fehlerwerte['str'].'</fehler><br><br>
-        Wohnort: <input type="hidden"  name="ort" value="'.$werte["ort"].'"><fehler>'.$fehlerwerte['ort'].'</fehler><br><br>
-        Land: <input type="hidden" name="land" value="'.$werte["land"].'"><fehler>'.$fehlerwerte['land'].'</fehler><br><br>
-        <img onload="enccode()" id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" /><br>
-        <input class="nimg"type="text" name="captcha_code" size="10" value="" maxlength="6"/><nimgfehler>'.$captchares.'</nimgfehler>
-        Captcha Code:<p class="nimgtext" >Code:</p>'
-        .'<button type="submit" value="Register" onclick="person.sendformReg()" formaction="?Register">Register</button></registerform>';
+        $daten='<registerform><jvcodes><input id="keycode" type="hidden" id="key" value="'.$key.'"></jvcodes>';
+        $daten=$daten.'<input type="hidden" name="identifier" value="'.$schl.'">';
+        $daten=$daten.$this->sprache[1].'<input type="hidden" name="angzname" value="'.$werte["angzname"].'"><fehler>'.$fehlerwerte['angzname'].'</fehler><br><br>'.$this->sprache[6].'<input type="hidden" name="vname" value="'.$werte["vname"].'"><fehler>'.$fehlerwerte['vname'].'</fehler><br><br>';
+        $daten=$daten.$this->sprache[2].'<input type="hidden"  name="nname" value="'.$werte["nname"].'"><fehler>'.$fehlerwerte['nname'].'</fehler><br><br>'.$this->sprache[7].'<input type="hidden" name="logon" value=""><fehler>'.$fehlerwerte['logon'].'</fehler><br><br>';
+        $daten=$daten.$this->sprache[3].'<input type="hidden" name="email" value="'.$werte["email"].'"><fehler>'.$fehlerwerte['email'].'</fehler><br><br>'.$this->sprache[8].'<input type="hidden"name="email2" autocomplete="off" value="'.$werte["email2"].'"><fehler>'.$fehlerwerte['email2'].'</fehler><br><br>';
+        $daten=$daten.$this->sprache[4].'<input type="hidden" name="str" value="'.$werte["str"].'"><fehler>'.$fehlerwerte['str'].'</fehler><br><br>'.$this->sprache[9].'<input type="hidden"  name="ort" value="'.$werte["ort"].'"><fehler>'.$fehlerwerte['ort'].'</fehler><br><br>';
+        $daten=$daten.$this->sprache[5].'<input type="hidden" name="land" value="'.$werte["land"].'"><fehler>'.$fehlerwerte['land'].'</fehler><br><br><img onload="enccode()" id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" /><br>';
+        $daten=$daten.'<input class="nimg"type="text" name="captcha_code" size="10" value="" maxlength="6"/><nimgfehler>'.$captchares.'</nimgfehler>'.$this->sprache[10].'<p class="nimgtext" >'.$this->sprache[12].'</p>';
+        $daten=$daten.'<button type="submit" value="Register" onclick="person.sendformReg()" formaction="?Register">'.$this->sprache[11].'</button></registerform>';
 
         echo $daten;
 
     }
     
     public function neuenachricht($code,$freunde) {
-        
+        echo '<div>  
+           <label for="textfeld" >'.$this->sprache[14].'</label><br>
+              <textarea id="textfeld" data-dojo-type="dijit/form/Textarea" cols="35" rows="4" style="width:90%" ></textarea><br> 	
+        </div>';
         echo '<input type="hidden" id="identifier" value="'.$code.'">';
         $counter=0;
-        echo '<input type="Radio" name="artikel" value="'.$counter.'" checked="checked" >Meine Pinnwand';
-        $counter++;
+        echo $this->sprache[13];
+                            echo '<input type="checkbox" data-dojo-type="dijit/form/CheckBox" name="artikel" value="'.$counter.'">ALL <br>';
         if(!is_null($freunde))
         {
         foreach ($freunde as $row) {
-                    echo '<input type="Radio" name="artikel" value="'.$counter.'"><text>'.$row['vname'].'</text> <text>'.$row['nname'].'</text>\'s Pinnwand';
+                    echo '<input  data-dojo-type="dijit/form/CheckBox" name="artikel" value="'.$counter.'"><text>'.$row['vname'].'</text> <text>'.$row['nname'].'</text> ';
                     $counter++;
                 }
         }
-        echo '<div>  
-                   <label for="textfeld" >Nachricht</label><br>
-                      <textarea id="textfeld" cols="35" rows="4" style="width:90%" ></textarea><br> 	
-                   <button onclick="nachricht.sendNachricht()" />Posten</button></p>
-                </div>';
- 
+        echo '<br><button class="button1" data-dojo-type="dijit/form/Button" onclick="nachricht.sendNachricht()" />'.$this->sprache[15].'</button></p>';
     }
 
     public function regLogon($jcsrpt) {
         
         $datenphpanf='<form action="?actconfirm" method="post">';
-        $daten='<registerform>Aktivierungscode: <input type="password"  name="code"><br>
-                Neues Passwort: <input type="password"  name="passwt" ><br>
-                Passwort bestätigen: <input type="password"  name="passwt2" ><br>';
-        $datensecend='<button  onclick="person.sendformActivat()" >Speichern</button></registerform>';
-        $datenphpend='<button type="submit" value="Register">Register</button></form></registerform>';
+        $daten='<registerform>'.$this->sprache[16].'<input type="password"  name="code"><br>
+                '.$this->sprache[17].'<input type="password"  name="passwt" ><br>
+                '.$this->sprache[18].'<input type="password"  name="passwt2" ><br>';
+        $datensecend='<button  onclick="person.sendformActivat()" >'.$this->sprache[19].'</button></registerform>';
+        $datenphpend='<button type="submit" value="Register">'.$this->sprache[20].'</button></form></registerform>';
         if($jcsrpt)
         {
             return $daten.$datensecend;
@@ -103,18 +91,18 @@ class Content {
     public function sucheFreund($code,$anfrg,$gesuche,$freunde) {
         $counter=0;
         echo '<input type="hidden" id="identifier" value="'.$code.'">';
-        echo'<h3>Durchsuche die Platform: <input id="suchfreund" type="text">';
-        echo '<button  onclick="friends.sucheFreunde()" >Suchen</button>';
-        echo '<br><br>Freundschaftsanfragen</h3>';
+        echo'<h3>'.$this->sprache[21].'<input id="suchfreund" type="text">';
+        echo '<button  onclick="friends.sucheFreunde()" >'.$this->sprache[28].'</button>';
+        echo '<br><br>'.$this->sprache[22].'</h3>';
         if(count($anfrg)>0)
         {
             echo "<table width=\"100%\">\n";
             echo "<tr>\n";
-            echo "<th>Nickname</th>";
-            echo "<th>Vorname</th>";
-            echo "<th>Nachname</th>";
-            echo "<th>Message</th>";
-            echo "<th>Auswählen</th>";
+            echo "<th>".$this->sprache[23]."</th>";
+            echo "<th>".$this->sprache[24]."</th>";
+            echo "<th>".$this->sprache[25]."</th>";
+            echo "<th>".$this->sprache[26]."</th>";
+            echo "<th>".$this->sprache[27]."</th>";
             echo "</tr>";
             if(!is_null($anfrg))
             {
@@ -124,7 +112,7 @@ class Content {
                     {
                         foreach($row as $key => $val)
                         {
-                                echo "<td>$val</td>";
+                                echo "<td>".$val."</td>";
                         }
                     }
                     echo "<td><input type=\"checkbox\" name=\"ausstattung[]\" value=\"$counter\"></td>";
@@ -133,14 +121,14 @@ class Content {
                 }
             }
                 echo "</table>\n";
-                echo '<button type="submit" value="Bestätigen" onclick="friends.bestAnfrage()" />Bestätigen</button>';
+                echo '<button type="submit" value="Bestätigen" onclick="friends.bestAnfrage()" />'.$this->sprache[29].'</button>';
         }
         else 
         {
-            echo 'keine Freundschaftsanfragen';
+            echo $this->sprache[30];
         }
-        $this->showUserTable($gesuche,'Meine Gesuche');
-        $this->showUserTable($freunde,'Freunde');
+        $this->showUserTable($gesuche,$this->sprache[31]);
+        $this->showUserTable($freunde,$this->sprache[32]);
 
     }
     
@@ -149,10 +137,10 @@ class Content {
     echo '<input type="hidden" name="identifier" value="'.$schl.'">';
     echo "<table width=\"100%\">\n";
     echo "<tr>\n";
-    echo "<th>Nickname</th>";
-    echo "<th>Vorname</th>";
-    echo "<th>Nachname</th>";
-    echo "<th>Auswählen</th>";
+    echo "<th>".$this->sprache[33]."</th>";
+    echo "<th>".$this->sprache[34]."</th>";
+    echo "<th>".$this->sprache[35]."</th>";
+    echo "<th>".$this->sprache[36]."</th>";
     echo "</tr>";
     if(!is_null($dbresult))
     {
@@ -162,7 +150,7 @@ class Content {
             {
                 foreach($row as $key => $val)
                 {
-                        echo "<td>$val</td>";
+                        echo "<td>".$val."</td>";
                 }
             }
             echo "<td><input type=\"checkbox\" name=\"ausstattung[]\" value=\"$counter\"></td>";
@@ -172,24 +160,24 @@ class Content {
     }
     echo "</table>\n";
     $data=' <div>  
-                   <label for="textfeld" >Freundschaftsanfrage Nachricht</label><br>
+                   <label for="textfeld" >'.$this->sprache[37].'</label><br>
                       <textarea id="textfeld" cols="35" rows="4" style="width:90%" ></textarea><br> 	
-                   <button type="submit" value="Absenden" onclick="friends.sendAnfrage()" />Absenden</button>
+                   <button type="submit" value="Absenden" onclick="friends.sendAnfrage()" />'.$this->sprache[38].'</button>
                 </div>';
 
     echo $data;
     }
     
     public function showUserTable($dbresult,$title) {
- 
-        echo "<h3>$title</h3>";
+        $counter=0;
+        echo "<h3>".$title."</h3>";
         if(!is_null($dbresult))
         {
         echo "<table width=\"100%\">\n";
         echo "<tr>\n";
-        echo "<th>Nickname</th>";
-        echo "<th>Vorname</th>";
-        echo "<th>Nachname</th>";
+        echo "<th>".$this->sprache[39]."</th>";
+        echo "<th>".$this->sprache[40]."</th>";
+        echo "<th>".$this->sprache[41]."</th>";
         echo "</tr>";
         if(!is_null($dbresult))
         {
@@ -199,7 +187,7 @@ class Content {
                 {
                     foreach($row as $key => $val)
                     {
-                            echo "<td>$val</td>";
+                            echo "<td>".$val."</td>";
                     }
                 }
                 echo "</tr>\n";
@@ -209,7 +197,7 @@ class Content {
         echo "</table>\n";
         }
         else {
-            echo 'keine Daten';
+            echo $this->sprache[42];
         }
     }
     
@@ -218,7 +206,7 @@ class Content {
         {
           //echo '<input type="hidden" name="identifier" value="'.$schl.'"><br>';
           foreach ($dbresult as $row) {
-              echo '<text>'.$row['useridfrom'].'</text> '.'<text>'.$row['datum'].'</text> <br>'.'<text>'.$row['message'].'</text> <br><br>';
+              echo '<text>'.$row['useridfrom'].'</text> <text>'.$row['datum'].'</text> <br> <text>'.$row['message'].'</text> <br><br>';
           }
         }
     }
@@ -227,7 +215,7 @@ class Content {
         echo '<input type="hidden" id="identifier" value="'.$code.'">';
         $counter=0;
         echo '<input type="hidden" name="identifier" value="'.$schl.'">';
-        echo 'Teilnehmer: <br>';
+        echo $this->sprache[43].'<br>';
         if(!is_null($freunde))
         {
             foreach ($freunde as $row) {
@@ -236,7 +224,7 @@ class Content {
                 }
         }
         echo '<br><br>';
-        echo '<input type="Checkbox" name="offene" value="-1">Nicht bestätigte Termine berücksichtigen<br><br>';
+        echo '<input type="Checkbox" name="offene" value="-1">'.$this->sprache[44].'<br><br>';
         $this->dropDate();
     }
     
@@ -244,23 +232,23 @@ class Content {
         
         echo "<table border=\"0\" cellspacing=\"0\" >
             <tr><td  align=left  > 
-            Monat <select id='month' value=''>Select Month</option>
-            <option value='01'>Jänner</option>
-            <option value='02'>Februar</option>
-            <option value='03'>Märt</option>
-            <option value='04'>April</option>
-            <option value='05'>Mai</option>
-            <option value='06'>Juni</option>
-            <option value='07'>July</option>
-            <option value='08'>August</option>
-            <option value='09'>September</option>
-            <option value='10'>October</option>
-            <option value='11'>November</option>
-            <option value='12'>Dezember</option>
+            Monat <select id='month' value=''>".$this->sprache[45]."</option>
+            <option value='01'>".$this->sprache[46]."</option>
+            <option value='02'>".$this->sprache[47]."</option>
+            <option value='03'>".$this->sprache[48]."</option>
+            <option value='04'>".$this->sprache[49]."</option>
+            <option value='05'>".$this->sprache[50]."</option>
+            <option value='06'>".$this->sprache[51]."</option>
+            <option value='07'>".$this->sprache[52]."</option>
+            <option value='08'>".$this->sprache[53]."</option>
+            <option value='09'>".$this->sprache[54]."</option>
+            <option value='10'>".$this->sprache[55]."</option>
+            <option value='11'>".$this->sprache[56]."</option>
+            <option value='12'>".$this->sprache[57]."</option>
             </select>
 
             </td><td  align=left  >  
-            Tag<select id='tag' >
+            ".$this->sprache[58]."<select id='tag' >
             <option value='01'>01</option>
             <option value='02'>02</option>
             <option value='03'>03</option>
@@ -295,7 +283,7 @@ class Content {
             </select>
             </td><td  align=left  >   
             Year(yyyy)<input type=text id='year' size=4 value=2012>
-            </table><button onclick='termin.sendDateTag()' >Anfragen</button>";
+            </table><button onclick='termin.sendDateTag()' >".$this->sprache[59]."</button>";
     }
     
     public function selectTermin($code,$date,$terminFr) {
@@ -309,16 +297,16 @@ class Content {
                 echo '<enctext>'.$row['werte'].'</enctext>' ;  
             }
         }
-        echo'<h4> Uhrzeit<br> Von: <input type="text" >Format: HH:MM<br> Bis: <input type="text"> Format: HH:MM</h4>';
-        echo 'Ort: <input type="text"><br>';
+        echo'<h4> '.$this->sprache[60].'<br> '.$this->sprache[61].'<input type="text" >'.$this->sprache[62].'<br> '.$this->sprache[63].'<input type="text"> '.$this->sprache[62].'</h4>';
+        echo $this->sprache[64].'<input type="text"><br>';
         echo '<input type="hidden"><br>';
-        echo '<button onclick="termin.terminbuchen()" >Termin festlegen</button>';
+        echo '<button onclick="termin.terminbuchen()" >'.$this->sprache[65].'<</button>';
     }
     
     public function showOffeneTermine($code,$dbresult) {
                 echo '<input type="hidden" id="identifier" value="'.$code.'">';
-                echo '<button onclick="termin.terminbestaetigen()" >Ausgewählte Termine bestätigen</button>';
-                echo '<button onclick="termin.terminablehen()" >Ausgewählte Termine ablehnen</button><br>';
+                echo '<button onclick="termin.terminbestaetigen()" >'.$this->sprache[66].'</button>';
+                echo '<button onclick="termin.terminablehen()" >'.$this->sprache[67].'</button><br>';
 
                 $counter=0;
                 if(!is_null($dbresult))
@@ -326,8 +314,8 @@ class Content {
                     foreach($dbresult as $rowa)
                     {
                             echo '<input type="Checkbox" name="artikel" value="'.$counter.'">';
-                            echo 'Termin von: <enctext>'.$rowa['termin']['von'].'</enctext> bis: <enctext>'.$rowa['termin']['bis'].'</enctext> in <enctext>'.$rowa['termin']['ort'].'</enctext>';
-                            echo '<enctext>'.$rowa['termin']['text'].'</enctext><br>Mit:<br>';
+                            echo $this->sprache[68].'<enctext>'.$rowa['termin']['von'].'</enctext> '.$this->sprache[69].'<enctext>'.$rowa['termin']['bis'].'</enctext> '.$this->sprache[70].'<enctext>'.$rowa['termin']['ort'].'</enctext>';
+                            echo '<enctext>'.$rowa['termin']['text'].'</enctext><br>'.$this->sprache[71].'<br>';
                             if(!is_null($rowa['user']))
                             {
                                 foreach($rowa['user'] as $rowu)
@@ -343,19 +331,19 @@ class Content {
     public function showTermine($timea,$timeb,$dbresult,$butt) {
                 if($timeb==0)
                 {
-                    echo '<h3>alle Termine</h3>';
+                    echo '<h3>'.$this->sprache[72].'</h3>';
                 }
                 else 
                 {
                     echo '<h3>';
                     if($butt)
                     {
-                        echo '<button onclick="termin.zuruck()" >Zurück</button>';
+                        echo '<button onclick="termin.zuruck()" >'.$this->sprache[72].'</button>';
                     }
-                    echo 'Termine vom '.date('G:i d.m.y',$timea).' bis '.date('G:i d.m.y',$timeb).' ';
+                    echo $this->sprache[73].date('G:i d.m.y',$timea).$this->sprache[74].date('G:i d.m.y',$timeb).' ';
                     if($butt)
                     {
-                        echo '<button onclick="termin.vor()" >Vorwärts</button>';
+                        echo '<button onclick="termin.vor()" >'.$this->sprache[75].'</button>';
                     }
                     echo '</h3>';
                 }
@@ -363,7 +351,7 @@ class Content {
                 {
                     foreach($dbresult as $rowa)
                     {
-                            echo 'Termin von: <enctext>'.$rowa['termin']['von'].'</enctext> bis: <enctext>'.$rowa['termin']['bis'].'</enctext> in <enctext>'.$rowa['termin']['ort'].'</enctext>';
+                            echo $this->sprache[76].'<enctext>'.$rowa['termin']['von'].'</enctext> '.$this->sprache[77].'<enctext>'.$rowa['termin']['bis'].'</enctext> '.$this->sprache[78].'<enctext>'.$rowa['termin']['ort'].'</enctext>';
                             echo '<enctext>'.$rowa['termin']['text'].'</enctext><br>Mit:<br>';
                             if(!is_null($rowa['user']))
                             {
@@ -381,29 +369,29 @@ class Content {
   
  
         echo '<registerform><input type="hidden" name="identifier" value="'.$schl.'">'
-        .'Angezeigter Name: <input type="hidden"name="angzname" value="'.$werte["angzname"].'"><fehler>'.$fehlerwerte['angzname'].'</fehler><br><br>
-        Vorname: <input type="hidden" name="vname" value="'.$werte["vname"].'"><fehler>'.$fehlerwerte['vname'].'</fehler><br><br>
-        Nachname: <input type="hidden"  name="nname" value="'.$werte["nname"].'"><fehler>'.$fehlerwerte['nname'].'</fehler><br><br>
-        Passwort ändern <button id="passbutton" onclick="person.aenderePassw()" >Passwort ändern</button><br><br>
-        E-Mail-Adresse:<input type="hidden" name="email" value="'.$werte["email"].'"><fehler>'.$fehlerwerte['email'].'</fehler><br><br>
-        Strasse: <input type="hidden" name="str" value="'.$werte["str"].'"><fehler>'.$fehlerwerte['str'].'</fehler><br><br>
-        Wohnort: <input type="hidden"  name="ort" value="'.$werte["ort"].'"><fehler>'.$fehlerwerte['ort'].'</fehler><br><br>
-        Land: <input type="hidden" name="land" value="'.$werte["land"].'"><fehler>'.$fehlerwerte['land'].'</fehler><br><br>
-        <button id="speicherEin" value="Register" onclick="person.speichereEin()" >Änderungen speichern</button></registerform>';
+        .$this->sprache[1].'<input type="hidden"name="angzname" value="'.$werte["angzname"].'"><fehler>'.$fehlerwerte['angzname'].'</fehler><br><br>
+        '.$this->sprache[6].'<input type="hidden" name="vname" value="'.$werte["vname"].'"><fehler>'.$fehlerwerte['vname'].'</fehler><br><br>
+        '.$this->sprache[2].'<input type="hidden"  name="nname" value="'.$werte["nname"].'"><fehler>'.$fehlerwerte['nname'].'</fehler><br><br>
+        '.$this->sprache[79].'<button id="passbutton" onclick="person.aenderePassw()" >'.$this->sprache[79].'</button><br><br>
+        '.$this->sprache[3].'<input type="hidden" name="email" value="'.$werte["email"].'"><fehler>'.$fehlerwerte['email'].'</fehler><br><br>
+        '.$this->sprache[4].' <input type="hidden" name="str" value="'.$werte["str"].'"><fehler>'.$fehlerwerte['str'].'</fehler><br><br>
+        '.$this->sprache[9].'<input type="hidden"  name="ort" value="'.$werte["ort"].'"><fehler>'.$fehlerwerte['ort'].'</fehler><br><br>
+        '.$this->sprache[5].'<input type="hidden" name="land" value="'.$werte["land"].'"><fehler>'.$fehlerwerte['land'].'</fehler><br><br>
+        <button id="speicherEin" value="Register" onclick="person.speichereEin()" >'.$this->sprache[80].'</button></registerform>';
 
 echo '<form action="?upload" method="post" enctype="multipart/form-data">
-        Benutzerbild ändern: <input type="file" name="datei">
-        <input type="submit" value="Hochladen">
+        '.$this->sprache[81].'<input type="file" name="datei">
+        <input type="submit" value="'.$this->sprache[82].'">
         </form>';
     }
     
     public function aenderP($code) {
         
         echo '<registerform><input type="hidden" name="identifier" value="'.$code.'">';
-        $daten='<registerform>altes Passwort: <input type="password"  name="code"><br>
-                Neues Passwort: <input type="password"  name="passwt" ><br>
-                Passwort bestätigen: <input type="password"  name="passwt2" ><br>';
-        $datensecend='<button  onclick="person.storeneuesPass()" >Speichern</button></registerform>';
+        $daten='<registerform>'.$this->sprache[83].'<input type="password"  name="code"><br>
+                '.$this->sprache[84].'<input type="password"  name="passwt" ><br>
+                '.$this->sprache[85].'<input type="password"  name="passwt2" ><br>';
+        $datensecend='<button  onclick="person.storeneuesPass()" >'.$this->sprache[86].'</button></registerform>';
  
         echo $daten.$datensecend;
 

@@ -28,7 +28,7 @@ abstract class Controler {
      * Erstellung aller Verknüpfungen
      */
     public function __construct() {
-        
+
         $this->head=new Head();
         $this->content= new Content();
         $this->footer= new Footer();

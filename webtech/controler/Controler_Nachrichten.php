@@ -29,6 +29,14 @@ class Controler_Nachrichten extends Controler {
         $this->showContent();
         $this->showrigthbar();
         $this->showfooter();
+                print("<script> require([ 
+                'dojo/dom',
+                'dojo/dom-construct',
+                'dojo/fx',
+                'dojo/domReady!'
+        ], function (dom, domConstruct,fx) {
+            var greetingNode = dom.byId('titel');
+            domConstruct.place('<em> Nachrichten</em>', greetingNode);});</script>");
 
     }
         
