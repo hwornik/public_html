@@ -219,6 +219,39 @@ class Controler_Buch extends Controler {
             
         }
         // sonstiger Aufruf
+        else if(isset($_GET['Vergessen']))
+        {
+              $this->content->vergessen();
+         
+        }
+        else if(isset($_GET['email']))
+        {
+            if(strlen($_GET['email'])>2)
+            {
+            if(isset($_GET['user']) && isset($_GET['pass']) )
+            {
+                echo 'Sie bekommen ihren usernamen und einen code zugeschickt, <br> mit dem sie ein neues Passwort eingeben können';
+            }
+            else if(isset($_GET['user']))
+            {
+                echo 'Sie bekommen ihren usernamen zugeschickt';
+            }
+            else if(isset($_GET['pass']))
+            {
+                echo 'Sie bekommen einen code zugeschickt, mit dem sie ein neues Passwort eingeben können';
+            }
+            else
+            {
+                echo 'Fehler sie haben keine  Aktion ausgwählt';
+            }
+            }
+            else
+            {
+                echo 'keine gültige emailadresse';
+            }
+         
+        }
+        // sonstiger Aufruf
         else
         {
              $this->content->normal();

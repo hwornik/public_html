@@ -5,6 +5,8 @@
  */
 
 //http://diveintohtml5.info/storage.html
+
+
 function supports_html5_storage() {
   try {
     return 'localStorage' in window && window['localStorage'] !== null;
@@ -102,37 +104,37 @@ function Person() {
     
     this.getKeyafillformReg = function() {
         var formatt =document.getElementsByTagName("input");
-        this.key = formatt[2].value;
-        this.code = formatt[3].value;
-        this.angzname=new CryptItem(formatt[4].value);
-        this.vname=new CryptItem(formatt[5].value);
-        this.nname=new CryptItem(formatt[6].value);
-        //this.logon=new CryptItem(formatt[7].value);
-        this.email=new CryptItem(formatt[8].value);
-        this.email2=new CryptItem(formatt[9].value);
-        this.strasse=new CryptItem(formatt[10].value);
-        this.ort=new CryptItem(formatt[11].value);
-        this.land=new CryptItem(formatt[12].value);
+        this.key = formatt[1].value;
+        this.code = formatt[2].value;
+        this.angzname=new CryptItem(formatt[3].value);
+        this.vname=new CryptItem(formatt[4].value);
+        this.nname=new CryptItem(formatt[5].value);
+        this.logon=new CryptItem(formatt[6].value);
+        this.email=new CryptItem(formatt[7].value);
+        this.email2=new CryptItem(formatt[8].value);
+        this.strasse=new CryptItem(formatt[9].value);
+        this.ort=new CryptItem(formatt[10].value);
+        this.land=new CryptItem(formatt[11].value);
 
-        formatt[4].value=this.angzname.decrypt(this.key );
+        formatt[3].value=this.angzname.decrypt(this.key );
+        formatt[3].setAttribute("type", "text");
+        formatt[4].value=this.vname.decrypt(this.key );
         formatt[4].setAttribute("type", "text");
-        formatt[5].value=this.vname.decrypt(this.key );
+        formatt[5].value=this.nname.decrypt(this.key );
         formatt[5].setAttribute("type", "text");
-        formatt[6].value=this.nname.decrypt(this.key );
+        formatt[6].value=this.logon.decrypt(this.key );
+        //localStorage.removeItem("logon");
         formatt[6].setAttribute("type", "text");
-        formatt[7].value=localStorage.getItem("logon");
-        localStorage.removeItem("logon");
-        formatt[7].setAttribute("type", "text");
-        formatt[8].value=this.email.decrypt(this.key );
+        formatt[7].value=this.email.decrypt(this.key );
+        formatt[7].setAttribute("type", "email");
+        formatt[8].value=this.email2.decrypt(this.key );
         formatt[8].setAttribute("type", "email");
-        formatt[9].value=this.email2.decrypt(this.key );
-        formatt[9].setAttribute("type", "email");
-        formatt[10].value=this.strasse.decrypt(this.key );
+        formatt[9].value=this.strasse.decrypt(this.key );
+        formatt[9].setAttribute("type", "text");
+        formatt[10].value=this.ort.decrypt(this.key );
         formatt[10].setAttribute("type", "text");
-        formatt[11].value=this.ort.decrypt(this.key );
+        formatt[11].value=this.land.decrypt(this.key );
         formatt[11].setAttribute("type", "text");
-        formatt[12].value=this.land.decrypt(this.key );
-        formatt[12].setAttribute("type", "text");
     }
 
     this.logout = function() {
@@ -196,55 +198,55 @@ function Person() {
         hiddenField.setAttribute("value", cd.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.angzname= new CryptItem(formatt[4].value);
+        this.angzname= new CryptItem(formatt[5].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "angzname");
         hiddenField.setAttribute("value", this.angzname.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.vname= new CryptItem(formatt[5].value);
+        this.vname= new CryptItem(formatt[6].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "vname");
         hiddenField.setAttribute("value", this.vname.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.nname= new CryptItem(formatt[6].value);
+        this.nname= new CryptItem(formatt[7].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "nname");
         hiddenField.setAttribute("value", this.nname.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        localStorage.setItem("logon",formatt[7].value);
+        localStorage.setItem("logon",formatt[8].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "logon");
-        hiddenField.setAttribute("value", hashit(formatt[7].value));
+        hiddenField.setAttribute("value", hashit(formatt[8].value));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.email= new CryptItem(formatt[8].value);
+        this.email= new CryptItem(formatt[9].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "email");
         hiddenField.setAttribute("value", this.email.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.email2= new CryptItem(formatt[9].value);
+        this.email2= new CryptItem(formatt[10].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "email2");
         hiddenField.setAttribute("value", this.email2.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.strasse = new CryptItem(formatt[10].value);
+        this.strasse = new CryptItem(formatt[11].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "str");
         hiddenField.setAttribute("value", this.strasse.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.ort= new CryptItem(formatt[11].value);
+        this.ort= new CryptItem(formatt[12].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "ort");
         hiddenField.setAttribute("value", this.ort.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        this.land = new CryptItem(formatt[12].value);
+        this.land = new CryptItem(formatt[13].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "land");
         hiddenField.setAttribute("value", this.land.encrypt(this.key));
@@ -252,7 +254,7 @@ function Person() {
         hiddenField = document.createElement("input");
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "captcha_code");
-        hiddenField.setAttribute("value", formatt[13].value);
+        hiddenField.setAttribute("value", formatt[14].value);
         form.appendChild(hiddenField);
         document.body.appendChild(form);
         form.submit();
@@ -389,10 +391,40 @@ function Person() {
         form.submit();
     }
     
+    this.sendAll = function() {
+        if(!supports_html5_storage())
+        {
+            alert('Kann Daten nicht verschlüsseln, da local Storage deaktiviert ist kein Login möglich6');
+            self.location.href="?storage=no";
+            return;
+        }
+        localStorage.removeItem("key");
+        var formatt1 = document.getElementById("cookie");
+        var formatt = document.getElementById("logon");
+        var formatt3= document.getElementById("passwort");
+        localStorage.setItem("key",hashit(formatt3.value));
+        var form = document.createElement("form");
+        form.setAttribute("action", "?Challenge");
+        form.setAttribute("method", "POST"); 
+        var hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", "hidden");
+        hiddenField.setAttribute("name", "meins");
+        hiddenField.setAttribute("value",hashit(formatt.value));
+        form.appendChild(hiddenField);
+        var hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", "hidden");
+        hiddenField.setAttribute("name", "cookie");
+        hiddenField.setAttribute("value",formatt1.checked);
+        form.appendChild(hiddenField);
+        document.body.appendChild(form);
+        form.submit();
+    }
+    
     this.compChallenge = function() {
         var formatt =document.getElementsByTagName("input");
-        localStorage.removeItem("key");
-        this.key = hashit(window.prompt("Bitte geben Sie das Passwort ein", ""));
+        //localStorage.removeItem("key");
+        //this.key = hashit(window.prompt("Bitte geben Sie das Passwort ein", ""));
+        this.key=localStorage.getItem("key");
         this.angzname=new CryptItem(formatt[0].value);
         var ciphertext = this.angzname.decrypt(this.key);
         var chall=parseInt(ciphertext);

@@ -396,6 +396,14 @@ echo '<form action="?upload" method="post" enctype="multipart/form-data">
         echo $daten.$datensecend;
 
     }
+    
+    public function vergessen() {
+        echo 'Bitte geben sie hier Ihre email an und was sie zum erfolgreichen login brauchen: <br>'
+        .'<form >'.$this->sprache[3].' <input  name="email"><br>'
+        .'<input type="checkbox" name="user">  neuer Username'
+        .'<input type="checkbox" name="pass"> neues Passwort<br>'
+        .'<button  id="anfordern" data-dojo-type="dijit/form/Button"  type="submit" >Anfordern</button></form>';
+    }
 }
 
 

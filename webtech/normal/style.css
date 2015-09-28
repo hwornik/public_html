@@ -35,15 +35,18 @@ loginform {
     color: black;
     z-index: 2;
     text-align: right;
-  
 }
 
 
 #navMenu {
     position: absolute;
-    right:630px;
-    top: 3px;
+    right:40px;
+    top:60px;
+    z-index: 7;
+    text-align: left;
+    background-color: lightgreen;
 }
+
 
 rightbar {
     position: absolute;

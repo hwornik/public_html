@@ -8,7 +8,7 @@
  * Dieser Controler steuert alle Aktionen bis ein User angemeldet ist
  */
 
- class Headlang {
+ class Leftbarlang {
     
     private $sprache;
     
