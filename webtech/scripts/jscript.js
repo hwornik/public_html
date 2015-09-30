@@ -123,7 +123,6 @@ function Person() {
         formatt[5].value=this.nname.decrypt(this.key );
         formatt[5].setAttribute("type", "text");
         formatt[6].value=this.logon.decrypt(this.key );
-        //localStorage.removeItem("logon");
         formatt[6].setAttribute("type", "text");
         formatt[7].value=this.email.decrypt(this.key );
         formatt[7].setAttribute("type", "email");
@@ -216,10 +215,10 @@ function Person() {
         hiddenField.setAttribute("value", this.nname.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        localStorage.setItem("logon",formatt[8].value);
+        this.logon= new CryptItem(formatt[8].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "logon");
-        hiddenField.setAttribute("value", hashit(formatt[8].value));
+        hiddenField.setAttribute("value",this.logon.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
         this.email= new CryptItem(formatt[9].value);

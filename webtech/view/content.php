@@ -34,11 +34,11 @@ class Content {
         $daten='<registerform><jvcodes><input id="keycode" type="hidden" id="key" value="'.$key.'"></jvcodes>';
         $daten=$daten.'<input type="hidden" name="identifier" value="'.$schl.'">';
         $daten=$daten.$this->sprache[1].'<input type="hidden" name="angzname" value="'.$werte["angzname"].'"><fehler>'.$fehlerwerte['angzname'].'</fehler><br><br>'.$this->sprache[6].'<input type="hidden" name="vname" value="'.$werte["vname"].'"><fehler>'.$fehlerwerte['vname'].'</fehler><br><br>';
-        $daten=$daten.$this->sprache[2].'<input type="hidden"  name="nname" value="'.$werte["nname"].'"><fehler>'.$fehlerwerte['nname'].'</fehler><br><br>'.$this->sprache[7].'<input type="hidden" name="logon" value=""><fehler>'.$fehlerwerte['logon'].'</fehler><br><br>';
+        $daten=$daten.$this->sprache[2].'<input type="hidden"  name="nname" value="'.$werte["nname"].'"><fehler>'.$fehlerwerte['nname'].'</fehler><br><br>'.$this->sprache[7].'<input type="hidden" name="logon" value="'.$werte["logon"].'"><fehler>'.$fehlerwerte['logon'].'</fehler><br><br>';
         $daten=$daten.$this->sprache[3].'<input type="hidden" name="email" value="'.$werte["email"].'"><fehler>'.$fehlerwerte['email'].'</fehler><br><br>'.$this->sprache[8].'<input type="hidden"name="email2" autocomplete="off" value="'.$werte["email2"].'"><fehler>'.$fehlerwerte['email2'].'</fehler><br><br>';
         $daten=$daten.$this->sprache[4].'<input type="hidden" name="str" value="'.$werte["str"].'"><fehler>'.$fehlerwerte['str'].'</fehler><br><br>'.$this->sprache[9].'<input type="hidden"  name="ort" value="'.$werte["ort"].'"><fehler>'.$fehlerwerte['ort'].'</fehler><br><br>';
         $daten=$daten.$this->sprache[5].'<input type="hidden" name="land" value="'.$werte["land"].'"><fehler>'.$fehlerwerte['land'].'</fehler><br><br><img onload="enccode()" id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" /><br>';
-        $daten=$daten.'<input class="nimg"type="text" name="captcha_code" size="10" value="" maxlength="6"/><nimgfehler>'.$captchares.'</nimgfehler>'.$this->sprache[10].'<p class="nimgtext" >'.$this->sprache[12].'</p>';
+        $daten=$daten.'<input class="nimg"type="text" name="captcha_code" size="10" value="" maxlength="6"/><nimgfehler>'.$fehlerwerte["capcha"].$captchares.'</nimgfehler>'.$this->sprache[10].'<p class="nimgtext" >'.$this->sprache[12].'</p>';
         $daten=$daten.'<button type="submit" value="Register" onclick="person.sendformReg()" formaction="?Register">'.$this->sprache[11].'</button></registerform>';
 
         echo $daten;

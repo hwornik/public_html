@@ -94,7 +94,7 @@ function Person() {
         this.angzname=new CryptItem(formatt[4].value);
         this.vname=new CryptItem(formatt[5].value);
         this.nname=new CryptItem(formatt[6].value);
-        //this.logon=new CryptItem(formatt[7].value);
+        this.logon=new CryptItem(formatt[7].value);
         this.email=new CryptItem(formatt[8].value);
         this.email2=new CryptItem(formatt[9].value);
         this.strasse=new CryptItem(formatt[10].value);
@@ -107,8 +107,7 @@ function Person() {
         formatt[5].setAttribute("type", "text");
         formatt[6].value=this.nname.decrypt(this.key );
         formatt[6].setAttribute("type", "text");
-        formatt[7].value=localStorage.getItem("logon");
-        localStorage.removeItem("logon");
+        formatt[7].value=this.logon.decrypt(this.key );
         formatt[7].setAttribute("type", "text");
         formatt[8].value=this.email.decrypt(this.key );
         formatt[8].setAttribute("type", "email");
@@ -201,10 +200,10 @@ function Person() {
         hiddenField.setAttribute("value", this.nname.encrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
-        localStorage.setItem("logon",formatt[7].value);
+        this.logon= new CryptItem(formatt[7].value);
         hiddenField.setAttribute("type", "hidden");
         hiddenField.setAttribute("name", "logon");
-        hiddenField.setAttribute("value", hashit(formatt[7].value));
+        hiddenField.setAttribute("value", this.logon.enccrypt(this.key));
         form.appendChild(hiddenField);
         hiddenField = document.createElement("input");
         this.email= new CryptItem(formatt[8].value);

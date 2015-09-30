@@ -336,10 +336,12 @@ class Controler_Buch extends Controler {
                 $this->werte["str"]="";
                 $this->werte["land"] ="";
                 $this->werte["identifier"]="";
+                
             $captchares='';
             // Chaptca übertragen = 2.Aufruf
-            if(isset($_POST['captcha_code']))
+            if(isset($_SESSION['identifier']))
             {
+                $this->werte["capcha"]=$_POST['captcha_code'];
                 $this->werte=$this->decodeReg();
                 // stimmen die übertragenen Daten key und identifier
                 if((strcmp($this->werte['key'],$_SESSION['key'])==0) && (strcmp($this->werte['identifier'],$_SESSION['identifier'])==0))
@@ -349,8 +351,8 @@ class Controler_Buch extends Controler {
                     {
                         // stimmt captcha nicht
                         if($this->secimage->check($_POST['captcha_code']) == false)
-                        { 
-                            $captchares='Falsche Eingabe';
+                        {         
+                                $this->wertefehler["capcha"]='Falsche Eingabe';
                         }
                         else 
                         {
@@ -375,7 +377,7 @@ class Controler_Buch extends Controler {
                 }
 
             }
-            // Ausgabe Registrierungsseite
+                // Ausgabe Registrierungsseite
             $_SESSION['key']=  $this->model->zufallsstring(20);
             $_SESSION['identifier']=hash("sha256",$this->model->zufallsstring(20));
             $this->content->register($_SESSION['identifier'],$_SESSION['key'],$this->getRegWerte(),$captchares, $this->wertefehler);
@@ -450,6 +452,11 @@ class Controler_Buch extends Controler {
             }
             $this->werte["land"]= $this->sqlwort;
             $this->wertefehler["land"]=  $this->getTestergebnis();
+            $this->wertefehler["capcha"]="";
+            if(strlen($this->werte['capcha'])<2)
+            {
+                $this->wertefehler["capcha"]=  "Eingabe erforderlich";
+            }
             return $fehler;
      }
      
@@ -478,19 +485,18 @@ class Controler_Buch extends Controler {
       * @return type werteArray
       */
      private function decodeReg() {
-
-            $this->werte["angzname"]=rtrim( $this->decryptit($_POST['angzname']));
-            $this->werte["vname"]= rtrim($this->decryptit($_POST['vname']));
-            $this->werte["nname"]= rtrim($this->decryptit($_POST['nname']));
-            $this->werte["logon"]= $_POST['logon'];
-            $this->werte["email"]= rtrim($this->decryptit($_POST['email']));
+                $this->werte["angzname"]=rtrim( $this->decryptit($_POST['angzname']));
+              $this->werte["vname"]= rtrim($this->decryptit($_POST['vname']));
+              $this->werte["nname"]= rtrim($this->decryptit($_POST['nname']));
+              $this->werte["logon"]= rtrim($this->decryptit($_POST['logon']));
+             $this->werte["email"]= rtrim($this->decryptit($_POST['email']));
             $this->werte["email2"]= rtrim($this->decryptit($_POST['email2']));
-            $this->werte["ort"]= rtrim($this->decryptit($_POST['ort']));
-            $this->werte["str"]= rtrim($this->decryptit($_POST['str']));
-            $this->werte["land"]= rtrim($this->decryptit($_POST['land']));
-            $this->werte["identifier"]= $_POST['identifier'];
-            $this->werte['key']= rtrim($this->decryptit($_POST['key']));
-             return $this->werte;
+                $this->werte["ort"]= rtrim($this->decryptit($_POST['ort']));
+             $this->werte["str"]= rtrim($this->decryptit($_POST['str']));
+               $this->werte["land"]= rtrim($this->decryptit($_POST['land']));
+              $this->werte["identifier"]= $_POST['identifier'];
+             $this->werte['key']= rtrim($this->decryptit($_POST['key']));
+            return $this->werte;
      }
      
      /**
