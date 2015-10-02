@@ -230,26 +230,30 @@ class Controler_Buch extends Controler {
             {
             if(isset($_GET['user']) && isset($_GET['pass']) )
             {
-                echo 'Sie bekommen ihren usernamen und einen code zugeschickt, <br> mit dem sie ein neues Passwort eingeben können';
+                echo $this->sprache[20];
             }
             else if(isset($_GET['user']))
             {
-                echo 'Sie bekommen ihren usernamen zugeschickt';
+                echo $this->sprache[21];
             }
             else if(isset($_GET['pass']))
             {
-                echo 'Sie bekommen einen code zugeschickt, mit dem sie ein neues Passwort eingeben können';
+                echo $this->sprache[22];
             }
             else
             {
-                echo 'Fehler sie haben keine  Aktion ausgwählt';
+                echo $this->sprache[23];
             }
             }
             else
             {
-                echo 'keine gültige emailadresse';
+                echo $this->sprache[24];
             }
          
+        }
+        else if(isset($_GET['usernotok']))
+        {
+            echo '<h2>'.$this->sprache[25].'</h2>';
         }
         // sonstiger Aufruf
         else
@@ -339,8 +343,9 @@ class Controler_Buch extends Controler {
                 
             $captchares='';
             // Chaptca übertragen = 2.Aufruf
-            if(isset($_SESSION['identifier']))
+            if(isset($_POST['captcha_code']))
             {
+                
                 $this->werte["capcha"]=$_POST['captcha_code'];
                 $this->werte=$this->decodeReg();
                 // stimmen die übertragenen Daten key und identifier
@@ -352,7 +357,7 @@ class Controler_Buch extends Controler {
                         // stimmt captcha nicht
                         if($this->secimage->check($_POST['captcha_code']) == false)
                         {         
-                                $this->wertefehler["capcha"]='Falsche Eingabe';
+                                $this->wertefehler["capcha"]=$this->sprache[26];
                         }
                         else 
                         {
@@ -377,7 +382,7 @@ class Controler_Buch extends Controler {
                 }
 
             }
-                // Ausgabe Registrierungsseite
+            // Ausgabe Registrierungsseite
             $_SESSION['key']=  $this->model->zufallsstring(20);
             $_SESSION['identifier']=hash("sha256",$this->model->zufallsstring(20));
             $this->content->register($_SESSION['identifier'],$_SESSION['key'],$this->getRegWerte(),$captchares, $this->wertefehler);
@@ -455,7 +460,7 @@ class Controler_Buch extends Controler {
             $this->wertefehler["capcha"]="";
             if(strlen($this->werte['capcha'])<2)
             {
-                $this->wertefehler["capcha"]=  "Eingabe erforderlich";
+                $this->wertefehler["capcha"]=  $this->sprache[27];
             }
             return $fehler;
      }
@@ -511,7 +516,7 @@ class Controler_Buch extends Controler {
                 $_SESSION['key']=  $this->model->getRegCode($this->sqlwort);
                 if(is_null($_SESSION['key']))
                 {
-                    return 'ungültiger Link';
+                    return $this->sprache[28];
                 }
                 else 
                 {

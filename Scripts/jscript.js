@@ -119,6 +119,7 @@ function Person() {
         formatt[11].setAttribute("type", "text");
         formatt[12].value=this.land.decrypt(this.key );
         formatt[12].setAttribute("type", "text");
+       
     }
 
     this.logout = function() {

@@ -35,7 +35,16 @@
             'tomorrow appointments',
             'appointments this week',
             'appointments next four weeks',
-            'all apointments' 
+            'all apointments',
+            'Sie bekommen ihren usernamen und einen code zugeschickt, <br> mit dem sie ein neues Passwort eingeben können',
+             'Sie bekommen ihren usernamen zugeschickt', 
+             'Sie bekommen einen code zugeschickt, mit dem sie ein neues Passwort eingeben können',
+             'Fehler sie haben keine  Aktion ausgewählt',
+             'keine gültige emailadresse',
+             'Username oder Passwort falsch',
+             'Falsche Eingabe',
+             'Eingabe erforderlich',
+             'ungültiger Link'
         );
         
         return $sprache;

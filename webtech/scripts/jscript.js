@@ -18,11 +18,11 @@ function supports_html5_storage() {
 function checkStorage() {
     if(supports_html5_storage())
     {
-        self.location.href="/webtech/index.php?storage=yes";
+        self.location.href="?storage=yes";
     }
     else
     {
-        self.location.href="/webtech/index.php?storage=no";
+        self.location.href="?storage=no";
     }
 }
 
@@ -104,6 +104,10 @@ function Person() {
     
     this.getKeyafillformReg = function() {
         var formatt =document.getElementsByTagName("input");
+        if(formatt.length>13)
+        {
+            self.location.href="?";
+        }
         this.key = formatt[1].value;
         this.code = formatt[2].value;
         this.angzname=new CryptItem(formatt[3].value);
@@ -115,7 +119,7 @@ function Person() {
         this.strasse=new CryptItem(formatt[9].value);
         this.ort=new CryptItem(formatt[10].value);
         this.land=new CryptItem(formatt[11].value);
-
+        
         formatt[3].value=this.angzname.decrypt(this.key );
         formatt[3].setAttribute("type", "text");
         formatt[4].value=this.vname.decrypt(this.key );
