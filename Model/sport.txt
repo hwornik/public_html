@@ -1,4 +1,4 @@
-<p class="ueber">Nächster Wettkampf:  Kärnten Läuft Halbmarathon am 23.August 2015</p>
+<p class="ueber">Nächster Wettkampf:  Kärnten Läuft Halbmarathon am 21.August 2016</p>
 <p class="ueber">Wunschzielzeit unter 2:00:00</p>
 <p class="ueber">(das wäre eine Durchschnittsgeschwindigkeit von mehr als 10 km/h)</p>
 <div id="endomondo">
