@@ -3,5 +3,7 @@
 <p class="text"> Danach: </p>
 <p class="text">Mark Dworetski: Moderne Schachtaktik</p>
 <p class="text">Mark Dworetski: Geheimnisse der Schachstrategie</p></br>
-<p class="text">Mein erster Schachcomputer:
-Mephisto Monaco</p></br></br></br></br>
+<p class="text">Mein erster Schachcomputer:Mephisto Monaco</p></br>
+<a style="font-size: 20px;" href="http://www.chess-results.com/OesbEloSuche.aspx?lan=0&elovar=0&key1=133960&key6=20170401">Meine nationale ELO</a></p></br>
+<a style="font-size: 20px;" href="http://ratings.fide.com/card.phtml?event=1659731">Meine internationale ELO</a>
+</br></br></br>

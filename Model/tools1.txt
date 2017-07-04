@@ -1,2 +1,2 @@
-<p class="info">Trainingsstart 30.06.2015</p>
-<p class="ueber">bei Boxverein E&S Klagenfurt</p>
+<p class="text">Trainingsstart 30.06.2015</p>
+<p class="text">beim Boxverein Klagenfurt</p>
