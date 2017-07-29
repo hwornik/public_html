@@ -7,3 +7,6 @@
 <a style="font-size: 20px;" href="http://www.chess-results.com/OesbEloSuche.aspx?lan=0&elovar=0&key1=133960&key6=20170401">Meine nationale ELO</a></p></br>
 <a style="font-size: 20px;" href="http://ratings.fide.com/card.phtml?event=1659731">Meine internationale ELO</a>
 </br></br></br>
+<iframe src="https://fritz.chessbase.com" style="width:760px;height:480px"></iframe>
+</br></br>
+</br></br>
