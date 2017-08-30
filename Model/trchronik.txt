@@ -9,3 +9,6 @@
 <p class="text">Zeit: 1:59:13 Pace: 5:39 min/km Speed: 10,62 km/h</p>
 <h2>Vierter Lauf: Halbmarathon in Kärnten am 24-08-2014</h2>
 <p class="text">Zeit: 2:00:01 Pace: 5:41 min/km Speed: 10,45 km/h</p>   
+<h2>Fünfter Lauf: Halbmarathon in Kärnten am 21-08-2016</h2>
+<p class="text">Zeit: 2:30:54 Pace: 7:09 min/km Speed: 8,39 km/h</p> 
+<iframe class="amazonl1" src="https://rcm-eu.amazon-adsystem.com/e/cm?f=ifr&t=hwornik-21&o=3&p=32&l=st1&mode=sporting-de&search=laufbekleidung&fc1=000000&lt1=_top&lc1=A43907&bg1=EFEFCC" marginwidth="0" marginheight="0" width="180" height="450" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>

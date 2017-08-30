@@ -5,3 +5,4 @@
 <div id="endomondo">
 <iframe src="http://www.endomondo.com/embed/user/summary?id=199475&sport=0&measure=0&zone=Gp0100_AMS&width=680&height=217" width="680" height="217" frameborder="0" scrolling="no" ></iframe>
 <iframe src="http://www.endomondo.com/embed/user/workouts?id=199475&measure=0&width=680&height=400" width="680" height="400" frameborder="0" scrolling="no" ></iframe>
+<iframe class="amazonl1" src="https://rcm-eu.amazon-adsystem.com/e/cm?f=ifr&t=hwornik-21&o=3&p=32&l=st1&mode=sporting-de&search=laufen&fc1=000000&lt1=_top&lc1=A43907&bg1=EFEFCC" marginwidth="0" marginheight="0" width="180" height="450" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>

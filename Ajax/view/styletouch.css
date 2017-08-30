@@ -651,3 +651,15 @@ background-color: #ffffcc;
       top: 220px;
       right: 0px;
   }
+  
+  .amazon1 {
+    position: absolute;
+     top: 250px;
+     right: 0px;
+  }
+  
+  .amazonb {
+    position: relative;
+     top: 0px;
+     left: 0%;
+  }

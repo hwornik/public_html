@@ -909,3 +909,8 @@ min-width: 700px;
     height: 40px;
  }
  
+  .amazon1 {
+    position: relative;
+     top: 200px;
+     left: 0px;
+  }
