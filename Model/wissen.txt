@@ -6,8 +6,9 @@
 <p class="text">Mein erster Schachcomputer:Mephisto Monaco</p></br>
 <a style="font-size: 20px;" href="http://www.chess-results.com/OesbEloSuche.aspx?lan=0&elovar=0&key1=133960&key6=20170401">Meine nationale ELO</a></p></br>
 <a style="font-size: 20px;" href="http://ratings.fide.com/card.phtml?event=1659731">Meine internationale ELO</a></br></br>
-<a style="font-size: 20px;" href="https://lichess.org/@/hans-i">Meine Account bei lichess.org</a>
-</br></br></br>
+<a style="font-size: 20px;" href="https://lichess.org/@/hans-i">Mein Account bei lichess.org</a></br></br>
+<a style="font-size: 20px;" href="https://www.chess.com/member/angrijoldman">Mein Account bei chess.com</a></br></br>
+</br>
 <iframe src="https://fritz.chessbase.com" style="width:760px;height:480px"></iframe>
 </br></br>
 </br></br>
