@@ -2,10 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
+ 
 $(document).ready(function(){
    
-    
     function allhide() {
         $(".aktuell").hide();
         $("#aktiviert").hide();
@@ -13,6 +12,8 @@ $(document).ready(function(){
         $("#submenuback").hide();
         $(".Chronikbutton1").hide();
         $(".Gamebutton1").hide();
+        $(".Gamebutton2").hide();
+        $(".Gamebutton3").hide();
         $(".Toolbutton1").hide();
         $(".Laufbutton1").hide();
         $(".Laufbutton2").hide();
@@ -134,7 +135,11 @@ $(document).ready(function(){
         $("#menuLine").show();
         $("#TextFeld").load('/Model/wissen.txt');
         $(".Gamebutton1").css({"cursor":"pointer"});
+        $(".Gamebutton2").css({"cursor":"pointer"});
+        $(".Gamebutton3").css({"cursor":"pointer"});
         $(".Gamebutton1").show();
+        $(".Gamebutton2").show();
+        $(".Gamebutton3").show();
         $(".aktuell").css({"left":'0px'});
         $(".aktuell").show();
         $("#submenuback").css({"background-color":"#DC0767"});
@@ -172,6 +177,20 @@ $(document).ready(function(){
     $(".Laufbutton3").click(function(){
         $("#TextFeld").load('/Model/trchronik.txt');
         $(".aktuell").css({"left":'280px'}); 
+    });
+    
+    $(".Gamebutton1").click(function(){
+        $("#TextFeld").load('/Model/wissen.txt');
+        $(".aktuell").css({"left":'0px'}); 
+    });
+    
+    $(".Gamebutton2").click(function(){
+        $("#TextFeld").load('/Model/partien.txt');
+        $(".aktuell").css({"left":'140px'});    });
+    
+    $(".Gamebutton3").click(function(){    
+        $("#TextFeld").load('/Model/archiv.txt');
+        $(".aktuell").css({"left":'320px'}); 
     });
     
     if(system.indexOf('Touch Screen User')>=0)

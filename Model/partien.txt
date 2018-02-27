@@ -1,0 +1,6 @@
+<script  type="text/javascript" src="scripts/cbreplay.js" ></script>
+<style type="text/css" title="text/css" media="screen">
+   @import url(https://pgn.chessbase.com/CBReplay.css);
+</style>
+<p class="text">Mein Erster Zug mit Rufzeichen 23.d5!. Partie gegen Bergmann A., K&auml;rnten 1.Klasse Ost 6. Runde 2017/18.[Ich mit Weiss]</p>
+<div class="cbreplay" data-url="/Model/hans1.pgn"></div>

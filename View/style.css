@@ -471,4 +471,10 @@ min-width: 700px;
      top: 120px;
      left: 0px;
   }
-   
+
+
+.info#merlinP{
+    position: relative;
+    left: 70px;
+    
+}

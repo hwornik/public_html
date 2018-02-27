@@ -1,0 +1,64 @@
+﻿[Event "1.Klasse-Ost1718"]
+[Site "?"]
+[Date "2018.02.24"]
+[Round "6"]
+[White "Wornik, H."]
+[Black "Bergmann, A."]
+[Result "1-0"]
+[ECO "E00"]
+[Annotator "Fritz 15 (10m)"]
+[PlyCount "61"]
+[SourceDate "2016.02.06"]
+[SourceVersionDate "2016.02.06"]
+
+{E00: Katalanisch} 1. d4 d5 2. c4 Nf6 3. Nc3 e6 4. a3 Be7 5. Nf3 O-O 6. b4 dxc4
+7. e3 b6 8. Bxc4 Bb7 9. O-O {letzter Buchzug} Ne4 {Schwarz droht
+Materialgewinn: Se4xc3} (9... Nbd7 10. Bb2 $11) 10. Bb2 $14 Nd7 11. Nxe4 Bxe4
+12. Bd3 Bb7 13. Rc1 Nf6 14. Re1 Rc8 15. e4 (15. Ne5 c5 16. dxc5 bxc5 $14) 15...
+c5 16. b5 (16. dxc5 bxc5 17. b5 c4 18. Rxc4 Rxc4 19. Bxc4 Nxe4 $11) 16... h6 {
+Sichert g5} 17. Qa4 {Weiß droht Materialgewinn: Da4xa7} (17. Qe2 Re8 $11) 17...
+Ra8 {Schwarz hat eine gedrückte Stellung} (17... cxd4 $5 18. Rxc8 Qxc8 19. Nxd4
+Rd8 $11) 18. Bb1 $14 Qc7 (18... Nd7 19. Rcd1 $14) 19. Qc2 g6 20. Qd2 {Weiß
+droht Materialgewinn: Dd2xh6} (20. dxc5 $142 bxc5 21. Ne5 $16) 20... Rad8 $2 (
+20... Kh7 $142 $14 {und Schwarz kann noch kämpfen}) 21. Qxh6 $18 Ng4 22. Qh3
+Qf4 $2 (22... Nf6 23. dxc5 bxc5 24. g4 $18) 23. d5 $1 {Räumung: d4} Bf6 (23...
+exd5 24. Qh8# {Mattangriff Räumung Fesselung}) 24. e5 Bg7 $2 (24... Rxd5 25.
+exf6 Nxf2 $18) 25. Re4 Qh6 26. Qxg4 Bxd5 27. Re3 Rd7 (27... Bxf3 {wäre
+gleichermaßen fruchtlos} 28. Qxf3 Qg5 29. Bc2 $18) 28. Ng5 f5 (28... Qh5 {
+ist noch eine dünne Chance} 29. Qxh5 gxh5 30. Bh7+ Kh8 $18) 29. exf6 Bxf6 30.
+Bxf6 Rxf6 31. Rh3 (31. Rh3 Qf8 32. Be4 $18) 1-0
+
+
+[Event "1.Klasse-Ost1718"]
+[Site "?"]
+[Date "2018.01.27"]
+[Round "5"]
+[White "Wornik, H."]
+[Black "Kollmann, M."]
+[Result "1-0"]
+[ECO "D10"]
+[Annotator "Fritz 15 (10m)"]
+[PlyCount "61"]
+[SourceDate "2016.02.06"]
+[SourceVersionDate "2016.02.06"]
+
+{ D10: Damengambit (Slawische Verteidigung)} 1. d4 d5 2. c4 Nf6 3.
+Nc3 c6 {letzter Buchzug} 4. a3 (4. e3 Bf5 $11) 4... Bg4 (4... dxc4 5. e4 b5 6.
+Nf3 $11) 5. Qc2 (5. Qb3 Qb6 6. Qxb6 axb6 7. cxd5 Nxd5 8. Nxd5 cxd5 $11) 5...
+dxc4 $11 6. e3 e6 {Deckt d5} (6... b5 7. a4 Qd7 8. e4 $11) 7. Bxc4 b5 {Schwarz
+droht Materialgewinn: b5xc4} (7... Bf5 8. Qe2 $11) 8. Be2 (8. Bd3 Bh5 $14) 8...
+Bf5 (8... Bxe2 9. Ncxe2 c5 10. dxc5 $11) 9. Bd3 (9. e4 $5 Bg6 10. Nf3 $14) 9...
+Bxd3 $11 10. Qxd3 a6 11. b4 (11. Nf3 c5 $11) 11... g6 12. Bb2 Bg7 13. Nf3 O-O
+14. Qc2 Ra7 15. O-O Rd7 (15... Nbd7 16. h3 $11) 16. Ne5 Rd6 17. Rac1 Nfd7 (
+17... Qe7 18. Qe2 $14) 18. Ne4 $16 Nxe5 19. Nxd6 Qxd6 (19... Nf3+ $142 $5 20.
+gxf3 Qxd6 $16) 20. dxe5 $18 Bxe5 21. Bxe5 (21. Rfd1 Qc7 22. Bxe5 Qxe5 $18)
+21... Qxe5 22. Rfd1 Qc7 23. Rd3 (23. Qc5 $142 $18) 23... Rd8 $4 {Schwarz zeigt
+sich dem Druck nicht mehr gewachsen} (23... Nd7 $142 $16) 24. Rxd8+ $18 Qxd8
+25. Rd1 Qg5 (25... Qf6 {ändert nichts mehr} 26. Qd3 c5 27. Qd6 $18) 26. g3 (26.
+Qc5 {ginge schneller} Qxc5 27. bxc5 Kg7 $18) 26... Kg7 (26... a5 {macht keinen
+großen Unterschied} 27. bxa5 Qe5 28. Qd3 $18) 27. Qc3+ Kh6 (27... e5 {ändert
+nichts am Ausgang der Partie} 28. f4 Qh5 29. Rd8 $18) 28. Rd4 (28. Qh8 $142 {
+sichert den Gewinn} Qf5 29. Qxb8 $18) 28... e5 29. f4 exd4 (29... Qf5 {würde
+die Partie unwesentlich verlängern} 30. fxe5 Qb1+ 31. Kg2 Qf5 $18) 30. fxg5+
+Kxg5 31. Qxd4 (31. Qxd4 Kf5 32. Qf4+ Ke6 33. Qxb8 $18) 1-0
+

@@ -5,11 +5,15 @@ class Header {
         print(' <html>
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="Pragma" content="no-cache">
 	<meta name="author" content="Hans Wornik">
         <link rel="stylesheet" type="text/css"  href="scripts/themes/base/jquery-ui.css">
-        <script  type="text/javascript" src="scripts/jquery-1.9.1.js" ></script>
+        <script  type="text/javascript" src="scripts/jquery-2.0.0.js" ></script>
          <script type="text/javascript" src="scripts/ui/jquery-ui.js"></script>
+         
+         
+    <link rel="stylesheet" type="text/css" href="https://pgn.chessbase.com/CBReplay.css"/>
+    <script src="scripts/cbreplay.js" type="text/javascript"></script>   
+    
          <script>var system="');
         print($_SESSION['system']);
         print('";</script> 
@@ -32,9 +36,9 @@ class Header {
     {
         echo 'view/style.css';
     }
+    
     print('" >
             <link type="image/x-icon" href="/Bilder/logo.png" rel="icon">
-
             <title>Wornik\'s Home</title>
 
         </head> 
@@ -45,6 +49,7 @@ class Header {
                 <p id="middlebar"></p>
                 <p class="rightbar"></p>
                 <p class="pseudo"></p>     ');
+
     print('<a href="/"><h1>Willkommen '.$_SESSION['system'].'</h1></a>');
                 }
 }

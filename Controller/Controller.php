@@ -36,6 +36,7 @@ class Controller {
         if($action=='chronik1')
         {
             $seite = implode(" ",file($_SESSION['pfad']."/Model/chronik1.txt"));
+            $seite='<img src="/Bilder/michouProfil1.jpg" alt="Michou" width="70" height="70">';
         }
         if($action=='training')
         {

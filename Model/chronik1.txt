@@ -1,34 +1,13 @@
-<p class="info">1983 erste Fortran Prozedur geschrieben</p>
+<p class="info" id="michouP"><img  width="70px" id="michouP" class="bilderload" src="/Bilder/michouProfil1.JPG">Michou</p>
+<p>Ich bin eine Norwegische Waldkatze und wiege jetzt 6,8kg. Um mein Gewicht zu halten, muss ich viel essen, ich bettel daher st&auml;ndig bei Herrchen.<br>
+Am liebsten springe ich &uuml;ber Kratzb&auml;ume und andere Objekte auf K&auml;sten um mich dort auszuruhen oder Ruhe vor Merlin zu haben.</p>
 <br>
 <hr>
 <br>
-<p class="info">1983 Atari 600Xl gekauft</p>
-<p class="text">Nach fertigstellung eines Malprogrammes beim Kompilieren abgestürzt-> finale  Programmversion futsch!!</p>
+<p class="info" id="merlinP"><img width="70px" id="merlinP"  class="bilderload" src="/Bilder/MerlinProfil1.JPG">Merlin</p>
+<p>Ich bin ein Somalikater und wiege jetzt 4,6kg. Ich liebe Streicheleinheiten und spiele am liebsten mit Kugelschreibern, Stiften und allem,<br /> 
+dass wie eine Schlange aussieht. Mindestens einmal im Tag kontrolliere ich alle Ecken und Spalten nach interressanten Objekten. Ab und zu <br>
+&ouml;ffne ich auch Schr&auml;nke um hineinzusehen, was mir aber nicht immer gelingt.</p>
 <br>
 <hr>
 <br>
-<p class="info">1984 HTL-Elektrotechnik Matura </p>
-<br>
-<hr>
-<br>
-<p class="info">1985-1989 Angestellter bei Siemens Bauelemente OHG in Villach </p>
-<br>
-<hr>
-<br>
-<p class="info">1986 IBM-PC von Arbeitskollegen gekauft</p>
-<p class="text"> Erste Overclock Aktion: Math-Co-Prozessor mit selbstgebastelten Kühlkörper eingebaut</p>
-<br>
-<hr>
-<br>
-<p class="info">1988 Ingenieurtitel </p>
-<br>
-<hr>
-<br>
-<p class="info">1996 Erste Linux Version parallel mit Windows </p>
-<p class="text">Nach wieder einmal wochenlangen Versuchen mit den neuen Linux Distributionen klappt es endlich mit SuSE Linux den PC mit aller Hardware zum laufen zu bringen</p>
-<br>
-<hr>
-<br>
-<p class="info">1998 Webseite www.wornik.at erstellt </p>
-<p class="text">Haben uns aufgrund der Zusatzfunktionen für MS Frontpage entschieden</p>
-<p class="text">Neue Seite von 2010 wurde von jemand anderen erstellt</p>

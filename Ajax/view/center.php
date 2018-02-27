@@ -5,7 +5,6 @@ class Center {
             <script type="text/javascript">
                  $("#TextFeld").load("/Model/start.txt");
             </script>
-        
         </div>');
     }
 }

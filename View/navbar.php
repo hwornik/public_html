@@ -14,6 +14,7 @@ print("<a href='/'> <h1>Willkommen ".$_SESSION['system']."</h1></a>");
   <li class="button2">Schach 
        <ul>
         <li><a href="?action=schach" class="buttons21" >Aktuelles</a></li>
+        <li><a href="?action=schach" class="buttons22" >Partien</a></li>
       </ul>
     </li>
     <li class="button3">Boxen
@@ -21,13 +22,13 @@ print("<a href='/'> <h1>Willkommen ".$_SESSION['system']."</h1></a>");
         <li><a href="?action=tool1" class="buttons31">Aktuelles</a></li>
       </ul>
     </li>
-    <!--
-    <li  class="button4">Games
+  
+    <li  class="button4">Meine Katzen
         <ul>
         <li><a href="?action=games1" class="buttons41">Aktuelles</a></li>
         </ul>
     </li>
-    <li class="button5">Personal 
+  <!--    <li class="button5">Personal 
         <ul>
         <li><a href="/" class="buttons51">Login</a></li>
         </ul>

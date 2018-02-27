@@ -201,6 +201,24 @@ font-size: 40px;
     width: 140px;
 }
 
+.Gamebutton2 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    left:140px;
+    width: 140px;
+}
+
+.Gamebutton3 {
+    text-align: center;
+    display:none;
+    color: black;
+    position: inherit;
+    left:320px;
+    width: 140px;
+}
+
 .Chronikbutton1 {
     text-align: center;
     display:none;
@@ -225,6 +243,8 @@ font-size: 40px;
     left:280px;
     width: 140px;
 }
+
+
 #rmaktuell{
     position: absolute;
     top: 114px;
@@ -663,6 +683,7 @@ background-color: #ffffcc;
     top: 40px;
     left: 25px; 
   }
+  <!-- Amazon Werbung -->
   .amazon1 {
     position: absolute;
      top: 250px;
@@ -686,3 +707,9 @@ background-color: #ffffcc;
      top: 0px;
      left: -180px;
   }
+  
+<!-- Schachbrett -->
+    .ct-white-square  
+    {  
+        background-color: LightGray;  
+    } 

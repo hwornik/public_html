@@ -1,0 +1,20 @@
+﻿[Event "Mein erster Zug mit Rufzeichen 23.d5! "]
+[Site "?"]
+[Date "2017.11.12"]
+[Round "?"]
+[White "Wornik, H."]
+[Black "Bergmann, A."]
+[Result "1-0"]
+[ECO "E00"]
+[Annotator "Fritz 15 (10m)"]
+[PlyCount "61"]
+[SourceDate "2016.02.06"]
+[SourceVersionDate "2016.02.06"]
+
+{E00: Katalanisch} 1. d4 d5 2. c4 Nf6 3. Nc3 e6 4. a3 Be7 5. Nf3
+O-O 6. b4 dxc4 7. e3 b6 8. Bxc4 Bb7 9. O-O {letzter Buchzug} Ne4 10. Bb2 Nd7
+11. Nxe4 Bxe4 12. Bd3 Bb7 13. Rc1 Nf6 14. Re1 Rc8 15. e4 c5 $11 16. b5 h6 17.
+Qa4 Ra8 18. Bb1 Qc7 19. Qc2 g6 20. Qd2 Rad8 $2 21. Qxh6 $18 Ng4 22. Qh3 Qf4 $2
+23. d5 $1 Bf6 24. e5 Bg7 $2 25. Re4 Qh6 26. Qxg4 Bxd5 27. Re3 Rd7 28. Ng5 f5
+29. exf6 Bxf6 30. Bxf6 Rxf6 31. Rh3 1-0
+

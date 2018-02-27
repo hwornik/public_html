@@ -1,0 +1,31 @@
+﻿[Event "1.Klasse-Ost1718"]
+[Site "?"]
+[Date "2017.11.12"]
+[Round "?"]
+[White "Wornik, H."]
+[Black "Bergmann"]
+[Result "1-0"]
+[ECO "E00"]
+[Annotator "Komodo 11.2.2 64-bit (10m)"]
+[PlyCount "61"]
+[SourceDate "2016.02.06"]
+[SourceVersionDate "2016.02.06"]
+
+{[%mdl 64] E00: Katalanisch} 1. d4 d5 2. c4 Nf6 3. Nc3 e6 4. a3 Be7 5. Nf3 O-O
+6. b4 dxc4 7. e3 b6 8. Bxc4 Bb7 9. O-O {letzter Buchzug} Ne4 {Schwarz droht
+Materialgewinn: Se4xc3} (9... a5 10. b5 $14) 10. Bb2 Nd7 (10... Nd6 11. Bd3 Nd7
+$14) 11. Nxe4 $14 Bxe4 12. Bd3 Bb7 (12... Bxd3 13. Qxd3 Nf6 14. e4 $16) 13. Rc1
+Nf6 14. Re1 Rc8 (14... c6 15. Ne5 Qc7 16. h3 $16) 15. e4 $16 c5 16. b5 (16.
+bxc5 bxc5 17. Qb3 Qb6 18. Qxb6 axb6 $14) 16... h6 {Deckt g5} (16... cxd4 17.
+Rxc8 Qxc8 18. Nxd4 $11) 17. Qa4 {Weiß droht Materialgewinn: Da4xa7} Ra8 (17...
+cxd4 18. Rxc8 Qxc8 19. Nxd4 $15) 18. Bb1 (18. h3 Nh5 19. g3 cxd4 20. Bxd4 Nf6
+$14) 18... Qc7 (18... a6 19. bxa6 Rxa6 20. Qc2 $16) 19. Qc2 g6 (19... Ng4 $142
+$5 $14 {und Schwarz kann noch kämpfen}) 20. Qd2 Rad8 21. Qxh6 Ng4 22. Qh3 Qf4 {
+[%tqu "En","","","","d4d5","",10]} 23. d5 $1 {Räumung: d4} Bf6 (23... exd5 24.
+Qh8# {Mattangriff Räumung Fesselung}) (23... Z0 $140 24. Qh8# {Mattdrohung})
+24. e5 (24. Bxf6 Nxf6 25. dxe6 Bc8 $18) 24... Bg7 (24... exd5 25. exf6 d4 26.
+Bxg6 Nxf6 $18) 25. Re4 $18 Qh6 26. Qxg4 Bxd5 (26... exd5 27. Ree1 $18) 27. Re3
+(27. Ree1 $142 {und Weiß hätte es noch leichter} Qh5 28. Qxh5 gxh5 $18) 27...
+Rd7 $2 (27... Rfe8 28. Ng5 $18) 28. Ng5 f5 $2 (28... Rfd8 $18) 29. exf6 Bxf6
+30. Bxf6 Rxf6 31. Rh3 (31. Rh3 Qg7 32. Re1 $18) 1-0
+

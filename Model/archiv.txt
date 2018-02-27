@@ -1,0 +1,5 @@
+<script  type="text/javascript" src="scripts/cbreplay.js" ></script>
+<style type="text/css" title="text/css" media="screen">
+   @import url(https://pgn.chessbase.com/CBReplay.css);
+</style>
+<div class="cbreplay" data-url="/Model/eigenepartien.pgn"></div>

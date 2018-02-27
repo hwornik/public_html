@@ -9,6 +9,7 @@ class Navbar {
                <p id="Laufen">Laufen</p>
                <p id="Tools">Boxen</p>
                <p id="Games">Schach</p>
+               <p id="Chronik">meine Katzen</p>
              </div>
             <p id="submenuback"></p>
             <p id="menuLine"></p>
@@ -22,7 +23,10 @@ class Navbar {
                     <p class="Chronikbutton1">Aktuelles</p>
                     <p class="Laufbutton2">Training</p>
                     <p class="Laufbutton3">Laufchronik</p>
+                    <p class="Gamebutton2"> ! Partien</p>
+                    <p class="Gamebutton3"> Partienarchiv</p>
             </div>');
+            
     }
 }
 ?>
