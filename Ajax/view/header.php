@@ -20,11 +20,11 @@ class Header {
          <script type="text/javascript" src="');
         if(strcmp($_SESSION['system'],"Touch Screen User")==0)
         {
-            echo 'scripts/scripttouch.js';
+            echo 'scripts/scripttouch.js?v7';
         }
         else
         {
-            echo 'scripts/script.js';
+            echo 'scripts/script.js?v7';
         }
     print('" ></script>
     <link rel="stylesheet" type="text/css" href="');
@@ -50,6 +50,6 @@ class Header {
                 <p class="rightbar"></p>
                 <p class="pseudo"></p>     ');
 
-    print('<a href="/"><h1>Willkommen '.$_SESSION['system'].'</h1></a>');
+    print('<a href="/"><h1>Willkommen Freund</h1></a>');
                 }
 }

@@ -1,13 +1,285 @@
-<p class="info" id="michouP"><img  width="70px" id="michouP" class="bilderload" src="/Bilder/michouProfil1.JPG">Michou</p>
+<p class="info" id="michouP"><img  width="70px" id="michouP" onclick="openModal();currentSlide(1)" class="hover-shadow" src="/Bilder/michouProfil1.JPG">Michou</p>
 <p>Ich bin eine Norwegische Waldkatze und wiege jetzt 6,8kg. Um mein Gewicht zu halten, muss ich viel essen, ich bettel daher st&auml;ndig bei Herrchen.<br>
 Am liebsten springe ich &uuml;ber Kratzb&auml;ume und andere Objekte auf K&auml;sten um mich dort auszuruhen oder Ruhe vor Merlin zu haben.</p>
 <br>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <p class="galeryüber"></p>
+  <div class="modal-content">
+  
+<!-- Michou Slides Bilder -->
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi1.JPG"  style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi2.JPG"  style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi3.JPG" style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi4.JPG" style="margin-left: 5%;">
+    </div>
+    
+        <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi5.JPG" style="margin-left: 32%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi6.JPG" style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi7.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi8.JPG" style="margin-left: 20%;" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi9.JPG" style="margin-left: 20%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi10.JPG" style="margin-left: 27%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi11.JPG" style="margin-left: 25%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi12.JPG" style="margin-left: 30%;">
+    </div>
+    
+        <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi13.JPG" style="margin-left: 25%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi14.JPG"  style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Mi15.JPG" style="margin-left: 5%;" >
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/mm1.JPG"  style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM2.JPG"  style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM3.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM4.JPG" style="margin-left: 5%;">
+    </div>
+    
+        <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM5.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM6.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM7.JPG" style="margin-left: 5%;" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM8.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM9.JPG" style="margin-left: 5%;" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM10.JPG" style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM12.JPG" style="margin-left: 10%;">
+    </div>
+
+      <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+  </div>
+</div>
 <hr>
 <br>
-<p class="info" id="merlinP"><img width="70px" id="merlinP"  class="bilderload" src="/Bilder/MerlinProfil1.JPG">Merlin</p>
+<p class="info" id="merlinP"><img width="70px" id="merlinP"  onclick="openModal2();currentSlide2(1)" class="hover-shadow" src="/Bilder/MerlinProfil1.JPG">Merlin</p>
 <p>Ich bin ein Somalikater und wiege jetzt 4,6kg. Ich liebe Streicheleinheiten und spiele am liebsten mit Kugelschreibern, Stiften und allem,<br /> 
 dass wie eine Schlange aussieht. Mindestens einmal im Tag kontrolliere ich alle Ecken und Spalten nach interressanten Objekten. Ab und zu <br>
 &ouml;ffne ich auch Schr&auml;nke um hineinzusehen, was mir aber nicht immer gelingt.</p>
 <br>
+<!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal2">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+    <p class="galeryüber"></p>
+  <div class="modal-content2">
+
+<!-- Merlin Slides Bilder -->
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me1.JPG"  style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me2.JPG"  style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me4.JPG" style="margin-left: 25%;">
+    </div>
+    
+        <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me5.JPG" style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me6.JPG" style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me7.JPG" style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me8.JPG" style="margin-left: 15%;" >
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me9.JPG" style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me10.JPG" style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/Me11.JPG" style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/mm1.JPG"  style="margin-left: 15%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM2.JPG"  style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM3.JPG" style="margin-left: 5%;">
+    </div>
+    
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM5.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM6.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM7.JPG" style="margin-left: 5%;" >
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM8.JPG" style="margin-left: 5%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM9.JPG" style="margin-left: 5%;" >
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM10.JPG" style="margin-left: 30%;">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext"></div>
+      <img src="/Bilder/Katzen/MM12.JPG" style="margin-left: 10%;">
+    </div>
+
+      <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+  </div>
+</div>
 <hr>
+<p class="info">Kampf am Kratzbaum      /    Wem geh&ouml;rt der Karton?
+<video src="/Bilder/katzenvideos/MOV_0221.mp4"  height=400 controls poster=""></video>
+
+<video src="/Bilder/katzenvideos/MOV_0246.mp4" height=400 controls poster=""></video></p>
 <br>

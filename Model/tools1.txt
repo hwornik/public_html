@@ -1,3 +1,7 @@
-<p class="text">Trainingsstart 30.06.2015</p>
-<p class="text">beim Boxverein Klagenfurt</p>
+<p class="text">Trainingsstart 30.06.2015 beim Boxverein Klagenfurt</p>
+<p class="infobild">vor dem Angriff</p>
+<p id="boxen"><img width="500px"   class="bilderload" src="/Bilder/boxen.jpg"></p><p class="text"></p></p>
+<p class="infobild">Angriff!</p>
+<p id="boxen"><img width="500px"   class="bilderload" src="/Bilder/boxen1.jpg"></p>
+
 <!--<iframe class="amazonb" src="https://rcm-eu.amazon-adsystem.com/e/cm?f=ifr&t=hwornik-21&o=3&p=12&l=st1&mode=sporting-de&search=boxen&fc1=000000&lt1=_top&lc1=A43907&bg1=EFEFCC" style="marginwidth:0;marginheight:0;width:300;height:250;border:0;frameborder:0;border:none;scrolling:no"></iframe>-->
